@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0977a83f-1284-499f-8b0e-341efa8303c2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/src/main/java/com/yueda/DriverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/src/main/java/com/yueda/DriverApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/src/main/java/com/yueda/driver/controller/DriverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/src/main/java/com/yueda/driver/controller/DriverController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/target/classes/com/yueda/DriverApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/target/classes/com/yueda/DriverApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-order-ns/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-order-ns/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-order-ns/target/classes/application.yml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="docker-desktop" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../mysoftware/mymaven/apache-maven-3.8.4" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="C:\mysoftware\mymaven\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2DwrDa8s0ZPr0Ms8rT6Umrws0a6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yueda.pay.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DriverApplication">
+    <configuration name="DriverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yueda.DriverApplication" />
+      <module name="hailtaxi-driver-ns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yueda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DriverApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hailtaxi-driver-ns" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yueda.DriverApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=18091" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DriverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hailtaxi-driver-ns" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yueda.DriverApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hailtaxi-gateway-ns" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yueda.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hailtaxi-order-ns" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yueda.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hailtaxi-pay-ns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuea.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuea.PayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DriverApplication" />
+      <item itemvalue="Spring Boot.DriverApplication" />
+      <item itemvalue="Spring Boot.DriverApplication (1)" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+      <item itemvalue="Spring Boot.PayApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PayApplication" />
+        <item itemvalue="Application.DriverApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0977a83f-1284-499f-8b0e-341efa8303c2" name="Changes" comment="" />
+      <created>1661620870112</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661620870112</updated>
+      <workItem from="1661620871198" duration="502000" />
+      <workItem from="1661621402023" duration="3559000" />
+      <workItem from="1661662053390" duration="6612000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1661667059515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661667059515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+</project>

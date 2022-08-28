@@ -1,6 +1,8 @@
 spring:
   application:
     name: hailtaxi-driver
+  profiles:
+    active: test
   cloud:
     nacos:
       discovery:

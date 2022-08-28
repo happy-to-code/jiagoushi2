@@ -5,6 +5,7 @@ import com.yueda.driver.service.DriverService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,11 +14,13 @@ import java.util.Enumeration;
 @RestController
 @RequestMapping(value = "/driver")
 @Slf4j
+@RefreshScope
 public class DriverController {
 	
 	@Autowired
 	private DriverService driverService;
-	
+	@Value("${app.name}")
+	private String name;
 	
 	/****
 	 * 司机信息
@@ -32,6 +35,7 @@ public class DriverController {
 		// 	System.out.println("--------------------------");
 		// }
 		System.out.println("port = " + port);
+		System.out.println("name = " + name);
 		return driverService.findById(id);
 	}
 	
