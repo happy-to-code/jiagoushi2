@@ -50,6 +50,7 @@ public class DriverController {
 	
 	/**
 	 * info资源出现任何类型异常后的降级处理  法参数可以添加一个Throwable 类型的参数，也可不添加
+	 *
 	 * @param id
 	 * @param e
 	 * @return
@@ -105,6 +106,24 @@ public class DriverController {
 		//修改状态
 		driverService.update(id, status);
 		//修改状态后的司机信息
-		return driverService.findById(id);
+		Driver driver = driverService.findById(id);
+		if (driver == null) {
+			throw new RuntimeException("司机id=" + id + ",不存在");
+		}
+		return driver;
+	}
+	
+	/***
+	 * 搜素指定城市的司机
+	 */
+	@SentinelResource(value = "search")
+	@GetMapping(value = "/search/{city}")
+	public Driver search(@PathVariable(value = "city") String city) {
+		System.out.println("查询的司机所在城市：" + city);
+		//假设查询到了一个司机信息
+		Driver driver = new Driver();
+		driver.setName("Yida");
+		driver.setId("No.1");
+		return driver;
 	}
 }

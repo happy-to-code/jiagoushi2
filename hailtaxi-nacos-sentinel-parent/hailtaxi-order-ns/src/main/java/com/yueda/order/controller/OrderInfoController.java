@@ -25,12 +25,12 @@ public class OrderInfoController {
 	
 	
 	/***
-	 * 下单
+	 * v
 	 */
 	@PostMapping
 	public OrderInfo add() {
 		//修改司机信息  司机ID=1
-		Driver driver = driverFeign.status("1", 2);
+		Driver driver = driverFeign.status("3", 2);
 		//创建订单
 		OrderInfo orderInfo = new OrderInfo("No" + ((int) (Math.random() * 10000)), (int) (Math.random() * 100), new Date(), "深圳北站" + UUID.randomUUID().toString().substring(0, 4), "罗湖港" + UUID.randomUUID().toString().substring(0, 4), driver);
 		orderInfoService.add(orderInfo);
