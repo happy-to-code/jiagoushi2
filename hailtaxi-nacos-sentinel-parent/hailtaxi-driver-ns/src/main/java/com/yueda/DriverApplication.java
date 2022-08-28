@@ -134,7 +134,7 @@ public class DriverApplication {
 	/***
 	 * 热点参数初始化
 	 */
-	@PostConstruct
+	// @PostConstruct
 	private static void initParamFlowRules() {
 		ParamFlowRule rule = new ParamFlowRule("search")
 				//参数下标为0

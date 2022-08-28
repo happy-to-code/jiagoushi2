@@ -2,8 +2,6 @@ package com.yueda.driver.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
-import com.alibaba.csp.sentinel.slots.system.SystemBlockException;
-import com.sun.deploy.security.BlockedException;
 import com.yueda.driver.model.Driver;
 import com.yueda.driver.service.DriverService;
 import lombok.extern.slf4j.Slf4j;
@@ -101,8 +99,9 @@ public class DriverController {
 	 * 更新司机信息
 	 */
 	@PutMapping(value = "/status/{id}/{status}")
-	public Driver status(@PathVariable(value = "id") String id, @PathVariable(value = "status") Integer status) {
+	public Driver status(@PathVariable(value = "id") String id, @PathVariable(value = "status") Integer status) throws Exception{
 		log.info("当前服务占用的端口为:{}", port);
+		System.out.println("==id===>"+id);
 		//修改状态
 		driverService.update(id, status);
 		//修改状态后的司机信息
