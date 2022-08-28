@@ -1,0 +1,9 @@
+com\yueda\driver\feign\DriverFeign.class
+com\yueda\driver\feign\fallback\DriverFeignFallBackFactory$1.class
+com\yueda\driver\feign\interceptor\MyRequestInterceptor.class
+com\yueda\order\model\OrderInfo.class
+com\yueda\driver\feign\fallback\DriverFeignFallBackFactory.class
+com\yueda\pay\model\TaxiPay.class
+com\yueda\driver\model\Driver.class
+com\yueda\driver\model\Car.class
+com\yueda\driver\model\CarModel.class

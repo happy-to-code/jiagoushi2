@@ -1,0 +1,31 @@
+server:
+  port: 18083
+spring:
+  application:
+    name: hailtaxi-pay
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 112.124.52.75:8848
+        namespace: e1af5b3b-4fcb-4684-9289-549ff73b95d3
+      config:
+        server-addr: 112.124.52.75:8848
+        namespace: e1af5b3b-4fcb-4684-9289-549ff73b95d3
+        enabled: true
+        file-extension: yaml
+    #Stream
+#    stream:
+#      binders: # 在此处配置要绑定的rabbitmq的服务信息；
+#        defaultRabbit: # 表示定义的名称，用于于binding整合
+#          type: rabbit # 消息组件类型
+#          environment: # 设置rabbitmq的相关的环境配置
+#            spring:
+#              rabbitmq:
+#                host: 192.168.200.129
+#                port: 5672
+#                username: guest
+#                password: guest
+#      bindings: # 服务的整合处理
+#        output: # 这个名字是一个通道的名称
+#          destination: payExchange # 表示要使用的Exchange名称定义
+#          content-type: application/json # 设置消息类型，本次为json，文本则设置“text/plain”
