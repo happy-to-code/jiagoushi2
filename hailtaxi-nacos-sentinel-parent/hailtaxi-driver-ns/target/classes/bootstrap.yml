@@ -1,8 +1,10 @@
+server:
+  port: 18081
 spring:
   application:
     name: hailtaxi-driver
   profiles:
-    active: test
+    active: dev
   cloud:
     nacos:
       discovery:

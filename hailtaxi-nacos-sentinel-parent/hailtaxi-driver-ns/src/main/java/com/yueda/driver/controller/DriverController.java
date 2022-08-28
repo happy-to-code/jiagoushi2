@@ -27,14 +27,27 @@ public class DriverController {
 	 * 司机信息
 	 */
 	@GetMapping(value = "/info/{id}")
-	public Driver info(@PathVariable(value = "id") String id, HttpServletRequest request) {
-		// Enumeration<String> headerNames = request.getHeaderNames();
-		// while (headerNames.hasMoreElements()) {
-		// 	String name = headerNames.nextElement();
-		// 	String value = request.getHeader(name);
-		// 	System.out.println(name + ":" + value);
-		// 	System.out.println("--------------------------");
-		// }
+	public Driver info(@PathVariable(value = "id") String id) {
+		Driver driver = driverService.findById(id);
+		if (driver == null) {
+			throw new RuntimeException("司机id:" + id + " 不存在");
+		}
+		return driver;
+	}
+	
+	
+	/****
+	 * 司机信息
+	 */
+	@GetMapping(value = "/info2/{id}")
+	public Driver info2(@PathVariable(value = "id") String id, HttpServletRequest request) {
+		Enumeration<String> headerNames = request.getHeaderNames();
+		while (headerNames.hasMoreElements()) {
+			String name = headerNames.nextElement();
+			String value = request.getHeader(name);
+			System.out.println(name + ":" + value);
+			System.out.println("--------------------------");
+		}
 		System.out.println("port = " + port);
 		System.out.println("name = " + name);
 		return driverService.findById(id);
