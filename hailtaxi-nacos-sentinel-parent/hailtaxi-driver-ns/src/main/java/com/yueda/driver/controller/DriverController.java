@@ -22,6 +22,7 @@ public class DriverController {
 	@Value("${app.name}")
 	private String name;
 	
+	
 	/****
 	 * 司机信息
 	 */
