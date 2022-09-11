@@ -4,6 +4,7 @@ import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.yueda.driver.model.Driver;
 import com.yueda.driver.service.DriverService;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,6 +19,7 @@ import java.util.Enumeration;
 @Slf4j
 @RefreshScope
 @SentinelResource(defaultFallback = "defaultExHandler")
+@GlobalTransactional
 public class DriverController {
 	
 	@Autowired
@@ -104,6 +106,7 @@ public class DriverController {
 		System.out.println("==id===>"+id);
 		//修改状态
 		driverService.update(id, status);
+		// int i = 1/0;
 		//修改状态后的司机信息
 		Driver driver = driverService.findById(id);
 		if (driver == null) {

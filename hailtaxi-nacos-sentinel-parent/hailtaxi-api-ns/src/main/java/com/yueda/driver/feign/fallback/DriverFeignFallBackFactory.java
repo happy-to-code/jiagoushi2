@@ -3,9 +3,8 @@ package com.yueda.driver.feign.fallback;
 
 import com.yueda.driver.feign.DriverFeign;
 import com.yueda.driver.model.Driver;
-import feign.hystrix.FallbackFactory;
+import org.springframework.cloud.openfeign.FallbackFactory;
 import org.springframework.stereotype.Component;
-
 
 @Component
 public class DriverFeignFallBackFactory implements FallbackFactory<DriverFeign> {

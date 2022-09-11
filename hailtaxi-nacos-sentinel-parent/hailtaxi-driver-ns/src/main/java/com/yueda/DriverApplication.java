@@ -13,6 +13,7 @@ import com.alibaba.csp.sentinel.slots.block.flow.param.ParamFlowItem;
 import com.alibaba.csp.sentinel.slots.block.flow.param.ParamFlowRule;
 import com.alibaba.csp.sentinel.slots.block.flow.param.ParamFlowRuleManager;
 import com.netflix.loadbalancer.IRule;
+import io.seata.spring.annotation.datasource.EnableAutoDataSourceProxy;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -32,6 +33,7 @@ import java.util.concurrent.TimeUnit;
 @SpringBootApplication
 @EnableDiscoveryClient
 @MapperScan(basePackages = "com.yueda.driver.mapper")
+@EnableAutoDataSourceProxy
 public class DriverApplication {
 	
 	public static void main(String[] args) {
