@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/a-yida-demo/a-yida-demo.iml" filepath="$PROJECT_DIR$/a-yida-demo/a-yida-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-api-ns/hailtaxi-api-ns.iml" filepath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-api-ns/hailtaxi-api-ns.iml" />
       <module fileurl="file://$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/hailtaxi-driver-ns.iml" filepath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/hailtaxi-driver-ns.iml" />
       <module fileurl="file://$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-gateway-ns/hailtaxi-gateway-ns.iml" filepath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-gateway-ns/hailtaxi-gateway-ns.iml" />

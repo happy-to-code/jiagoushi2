@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/a-yida-demo/pom.xml" />
       </list>
     </option>
   </component>

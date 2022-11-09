@@ -1,3 +1,5 @@
 */target/
 /hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/target/
 */target/*
+*.idea
+*/libraries/*.xml
