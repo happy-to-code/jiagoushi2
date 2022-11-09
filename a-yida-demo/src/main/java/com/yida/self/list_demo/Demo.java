@@ -2,7 +2,6 @@ package com.yida.self.list_demo;
 
 import cn.hutool.core.collection.CollUtil;
 import com.google.common.collect.Lists;
-import org.springframework.util.StringUtils;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -11,6 +10,9 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/**
+ * 注释
+ */
 public class Demo {
     public static void main(String[] args) {
         List<Boy> boys = new ArrayList<>(10);
@@ -20,6 +22,7 @@ public class Demo {
         boys.add(new Boy("xz", 13));
         boys.add(new Boy("xn", 18));
         boys.add(new Boy("xv", 18));
+
 
         List<String> names = boys.stream().map(Boy::getName).collect(Collectors.toList());
         System.out.println("names = " + names);
@@ -50,7 +53,7 @@ public class Demo {
         Boy b = new Boy("aha", 3);
         System.out.println(Objects.isNull(b));
         System.out.println("=====================");
-        List<String> list =Arrays.asList("a","a","b","c","c");
+        List<String> list = Arrays.asList("a", "a", "b", "c", "c");
         System.out.println("list = " + list);
 
         Map<String, Boy> collect1 = boys.stream().collect(Collectors.toMap(item -> item.getName().toLowerCase(), Function.identity()));
