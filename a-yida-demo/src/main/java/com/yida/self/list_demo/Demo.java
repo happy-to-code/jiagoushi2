@@ -1,6 +1,7 @@
 package com.yida.self.list_demo;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.util.StrUtil;
 import com.google.common.collect.Lists;
 
 import java.time.LocalDateTime;
@@ -17,12 +18,18 @@ public class Demo {
     public static void main(String[] args) {
         List<Boy> boys = new ArrayList<>(10);
         boys.add(new Boy("xm", 10));
-//        boys.add(new Boy("xm", 20));
+        // boys.add(new Boy("xm", 20));
         boys.add(new Boy("xh", 11));
-        boys.add(new Boy("xz", 13));
-        boys.add(new Boy("xn", 18));
+        boys.add(new Boy(" xz", 13));
+        boys.add(new Boy(" xn", 18));
         boys.add(new Boy("xv", 18));
-
+        boys.add(new Boy("", 10));
+        boys.add(new Boy("  ", 27));
+        boys = boys.stream().filter(item -> StrUtil.isNotBlank(item.getName()))
+                .filter(item -> item.getAge() > 11)
+                .map(item -> new Boy(item.getName().trim(), item.getAge()))
+                .collect(Collectors.toList());
+        System.out.println("boys ======> " + boys);
 
         List<String> names = boys.stream().map(Boy::getName).collect(Collectors.toList());
         System.out.println("names = " + names);
