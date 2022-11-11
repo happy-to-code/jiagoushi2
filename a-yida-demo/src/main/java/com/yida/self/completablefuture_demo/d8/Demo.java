@@ -1,4 +1,4 @@
-package com.yida.self.list_demo.completablefuture_demo.d8;
+package com.yida.self.completablefuture_demo.d8;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
