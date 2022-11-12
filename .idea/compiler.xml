@@ -11,10 +11,12 @@
         <module name="hailtaxi-api-ns" />
         <module name="hailtaxi-pay-ns" />
         <module name="hailtaxi-gateway-ns" />
+        <module name="a-yida-demo" />
         <module name="hailtaxi-order-ns" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="a-yida-demo" target="1.8" />
       <module name="hailtaxi-api-ns" target="1.8" />
       <module name="hailtaxi-driver-ns" target="1.8" />
       <module name="hailtaxi-gateway-ns" target="1.8" />
@@ -25,6 +27,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="a-yida-demo" options="-parameters" />
       <module name="hailtaxi-api-ns" options="-parameters" />
       <module name="hailtaxi-driver-ns" options="-parameters" />
       <module name="hailtaxi-gateway-ns" options="-parameters" />

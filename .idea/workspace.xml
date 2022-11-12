@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0977a83f-1284-499f-8b0e-341efa8303c2" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/src/main/java/com/yueda/driver/controller/DriverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/src/main/java/com/yueda/driver/controller/DriverController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/target/classes/com/yueda/driver/controller/DriverController.class" beforeDir="false" afterPath="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-driver-ns/target/classes/com/yueda/driver/controller/DriverController.class" afterDir="false" />
-    </list>
+    <list default="true" id="0977a83f-1284-499f-8b0e-341efa8303c2" name="Changes" comment="seata" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,14 +58,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hailtaxi-nacos-sentinel-parent/hailtaxi-gateway-ns/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\myfile\yida-jgs2\hailtaxi-nacos-sentinel-parent\hailtaxi-gateway-ns\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yida.self.annotation2" />
+      <recent name="com.yueda.driver.feign.fallback" />
       <recent name="com.yueda.pay.model" />
     </key>
   </component>
@@ -72,13 +82,39 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DriverApplication">
-    <configuration name="DriverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yueda.DriverApplication" />
-      <module name="hailtaxi-driver-ns" />
+  <component name="RunManager" selected="Spring Boot.OrderApplication">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yida.self.annotation2.Test" />
+      <module name="a-yida-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yueda.*" />
+          <option name="PATTERN" value="com.yida.self.annotation2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yida.self.annotation2.Test2" />
+      <module name="a-yida-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yida.self.annotation2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMyAnnotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yida.self.annotation.TestMyAnnotation" />
+      <module name="a-yida-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yida.self.annotation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,18 +167,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="a-yida-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yida.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yida.StartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.DriverApplication" />
+      <item itemvalue="Application.TestMyAnnotation" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.Test2" />
       <item itemvalue="Spring Boot.DriverApplication" />
       <item itemvalue="Spring Boot.DriverApplication (1)" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.OrderApplication" />
       <item itemvalue="Spring Boot.PayApplication" />
+      <item itemvalue="Spring Boot.StartApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TestMyAnnotation" />
+        <item itemvalue="Spring Boot.StartApplication" />
         <item itemvalue="Spring Boot.PayApplication" />
-        <item itemvalue="Application.DriverApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +212,10 @@
       <workItem from="1661620871198" duration="502000" />
       <workItem from="1661621402023" duration="3559000" />
       <workItem from="1661662053390" duration="9700000" />
-      <workItem from="1661674855268" duration="4958000" />
+      <workItem from="1661674855268" duration="16288000" />
+      <workItem from="1661779264431" duration="7902000" />
+      <workItem from="1662909292138" duration="6896000" />
+      <workItem from="1668259398677" duration="733000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1661667059515</created>
@@ -180,7 +238,28 @@
       <option name="project" value="LOCAL" />
       <updated>1661679299354</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="降级">
+      <created>1661696220039</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661696220039</updated>
+    </task>
+    <task id="LOCAL-00005" summary="降级">
+      <created>1661702781801</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661702781801</updated>
+    </task>
+    <task id="LOCAL-00006" summary="seata">
+      <created>1662918657625</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662918657625</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +267,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="降级" />
+    <MESSAGE value="seata" />
+    <option name="LAST_COMMIT_MESSAGE" value="seata" />
   </component>
 </project>
