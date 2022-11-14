@@ -18,4 +18,12 @@ public class Person implements Serializable {
 
     private String name;
     private Integer age;
+
+    public void select(){
+        System.out.println("person select");
+    }
+
+    public void update(){
+        System.out.println("person update");
+    }
 }
