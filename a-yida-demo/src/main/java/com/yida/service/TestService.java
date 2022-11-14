@@ -15,8 +15,15 @@ import java.util.UUID;
 @Service
 public class TestService {
 
+    /**
+     * testGet 测试
+     *
+     * @param param1
+     * @param param2
+     * @return
+     */
     @Transactional(rollbackFor = Exception.class)
-    public String testGet() {
+    public String testGet(String param1, Integer param2) {
         return UUID.randomUUID().toString().replace("-", "");
     }
 }
