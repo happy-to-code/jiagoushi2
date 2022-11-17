@@ -14,7 +14,7 @@ import java.util.List;
 public class Demo {
     public static void main(String[] args) {
         List<Integer> bizOrderCustomerList = CollUtil.newArrayList();
-        // bizOrderCustomerList.add(1);
+        // bizOrderCustomerList.add(1.json);
         // bizOrderCustomerList.add(2);
         // bizOrderCustomerList.add(3);
         // bizOrderCustomerList.add(4);

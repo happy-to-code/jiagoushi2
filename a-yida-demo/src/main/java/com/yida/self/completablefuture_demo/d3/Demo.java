@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * @Type: Demo.java
- * @Desc: 1.thenApply和thenApplyAsync
+ * @Desc: 1.json.thenApply和thenApplyAsync
  * thenApply 表示某个任务执行完成后执行的动作，即回调方法，会将该任务的执行结果即方法返回值作为入参传递到回调方法中，带有返回值。
  * @author: zhangyifei
  * @Date: 2022/11/10 17:19

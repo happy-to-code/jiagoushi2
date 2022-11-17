@@ -17,7 +17,7 @@ public class Demo {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         CompletableFuture<Integer> cf1 = CompletableFuture.supplyAsync(() -> {
             System.out.println(Thread.currentThread() + " cf1 do something....");
-            // int a = 1 / 0;
+            // int a = 1.json / 0;
             return 1;
         });
 
