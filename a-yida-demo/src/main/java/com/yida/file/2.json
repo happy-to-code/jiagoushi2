@@ -1,0 +1,11 @@
+[
+  {
+    "msg": "shipment sealed successfully",
+    "items": [
+      {
+        "consignment_id": "EWEUE2211000001YQ",
+        "pdf_url": "https://jerrytest.ewe.com.au/eweApi/ewe/aupost/v2/printSingleLabel?labelCode=gjP0Vvjdkt8CKutZ7x0vwNJ6l%2B39rJPYCrXcaEVjHLk="
+      }
+    ]
+  }
+]

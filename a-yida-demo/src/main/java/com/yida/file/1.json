@@ -1,0 +1,58 @@
+{
+  "username": "dl-sh",
+  "digest": "nBOi6mcHZ/z+OlkyN62sjw==",
+  "msgType": "pushUnCreatedShipments",
+  "version": "1.0",
+  "shipments": [
+    {
+      "sender_reference": "K111211vi21123",
+      "from": {
+        "name": "Sydney",
+        "phone": "0296442648",
+        "suburb": "Chullora",
+        "state": "NSW",
+        "lines": [
+          "haha"
+        ],
+        "postcode": "2190"
+      },
+      "to": {
+        "name": "MengyangBai",
+        "phone": "0404280016",
+        "suburb": "Chullora",
+        "state": "NSW",
+        "lines": [
+          "haha"
+        ],
+        "postcode": "2190",
+        "country": "AU"
+      },
+      "items": [
+        {
+          "item_description": "Vida Glow Blueberry g",
+          "product_id": "3D35",
+          "weight": 6,
+          "width": 8,
+          "length": 7,
+          "height": "8",
+          "useStock": 0,
+          "merchandise": [
+            {
+              "sku": "12345601",
+              "goodsName": "ENGLISH",
+              "barcode": "12345601",
+              "description": "milk",
+              "country_of_origin": "AU",
+              "quantity": "2",
+              "value": "2",
+              "length": "6",
+              "width": "6",
+              "height": "6",
+              "weight": "6"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

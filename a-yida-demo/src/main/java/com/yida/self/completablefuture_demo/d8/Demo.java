@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * @Type: Demo.java
- * @Desc: 1.thenCombine、thenAcceptBoth 和runAfterBoth
+ * @Desc: 1.json.thenCombine、thenAcceptBoth 和runAfterBoth
  * 这三个方法都是将两个CompletableFuture组合起来处理，只有两个任务都正常完成时，才进行下阶段任务。
  * <p>
  * 区别：
@@ -28,7 +28,7 @@ public class Demo {
 
         CompletableFuture<Integer> cf2 = CompletableFuture.supplyAsync(() -> {
             System.out.println(Thread.currentThread() + " cf2 do something....");
-            // int i = 1/0;
+            // int i = 1.json/0;
             return 2;
         });
 
