@@ -65,7 +65,7 @@ public class Test {
     public static void main(String[] args) throws Exception {
         String s = LoadContentByPath("E:\\java_demo\\jiagoushi2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\hex2pdf\\7.txt");
         byte[] b = Base64.getDecoder().decode(s);
-        buff2Image(b, "E:\\java_demo\\jiagoushi2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\hex2pdf\\test003.pdf");
+        // buff2Image(b, "E:\\java_demo\\jiagoushi2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\hex2pdf\\test004.pdf");
     }
 
     /**

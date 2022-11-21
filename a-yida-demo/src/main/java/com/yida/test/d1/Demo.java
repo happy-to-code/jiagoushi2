@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.Base64;
 import java.util.Date;
 
 /**
@@ -15,6 +16,9 @@ import java.util.Date;
  */
 public class Demo {
     public static void main(String[] args) {
+        byte[] decode = Base64.getDecoder().decode("".getBytes());
+        System.out.println("decode.toString() = " + decode.toString());
+        System.out.println("decode.toString() = " + new String(decode));
         String format = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
         System.out.println("format = " + format);
 
