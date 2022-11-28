@@ -1,4 +1,4 @@
-package com.yida.design_mode.simple_factory;
+package com.yida.design_mode.creation_mode.simple_factory;
 
 public class Square extends Shape {
 

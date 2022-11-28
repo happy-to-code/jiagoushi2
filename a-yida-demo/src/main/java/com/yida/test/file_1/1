@@ -1,0 +1,55 @@
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`, `status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341889', '1595965439790292994','CNE','CHE', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341890', '1595965439790292994',
+'云途','YUNTU', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341891', '1595965439790292994',
+'DPEX(迪比翼环球快递','DPEX', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341892', '1595965439790292994',
+'网易速达EQUICK','WANGYI', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341893', '1595965439790292994',
+'递四方','DSF', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341894', '1595965439790292994',
+'佳成国际物流股份有限公司','JIACHENG', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341895', '1595965439790292994',
+'急速国际','JISU', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341896', '1595965439790292994',
+'顺友物流','SHUNYOU', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341897', '1595965439790292994',
+'ubi','UBI', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341898', '1595965439790292994',
+'上海义达国际物流有限公司','YIDA', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341899', '1595965439790292994',
+'燕文','YANWEN', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341900', '1595965439790292994',
+'佳邮','JIAYOU', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341901', '1595965439790292994','深圳市润百国际物流有限公司','RUNBAI', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341902', '1595965439790292994',
+'DHLeC易橙互动-上海普货','DHL', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341903', '1595965439790292994',
+'EWE Group Pty. Ltd.','EWE', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341904', '1595965439790292994',
+'中国邮政(新)','YOUZHENG', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341905', '1595965439790292994',
+'上海乐天速递有限公司','LETIAN', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341906', '1595965439790292994',
+'柏域斯供应链管理（上海）有限公司','BAIYUSI', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+INSERT INTO `sak_oms`.`sys_dict_item` (`id`, `dict_id`, `item_text`, `item_value`, `description`, `sort_order`,
+`status`, `create_by`, `create_time`, `update_by`, `update_time`) VALUES ('1595967658258341907', '1595965439790292994',
+'菜鸟开放','CAINIAO', '', 1, 1, 'dev', '2022-11-25 10:24:46', 'dev', '2022-11-25 11:08:26');
+
+

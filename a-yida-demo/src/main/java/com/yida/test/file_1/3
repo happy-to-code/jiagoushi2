@@ -1,0 +1,38 @@
+// CNE
+public static final String LOGISTICS_CNE= "CNE";
+// 云途
+public static final String LOGISTICS_YUNTU= "YUNTU";
+// DPEX(迪比翼环球快递
+public static final String LOGISTICS_DPEX= "DPEX";
+// 网易速达EQUICK
+public static final String LOGISTICS_WANGYI= "WANGYI";
+// 递四方
+public static final String LOGISTICS_DSF= "DSF";
+// 佳成国际物流股份有限公司
+public static final String LOGISTICS_JIACHENG= "JIACHENG";
+// 急速国际
+public static final String LOGISTICS_JISU= "JISU";
+// 顺友物流
+public static final String LOGISTICS_SHUNYOU= "SHUNYOU";
+// ubi
+public static final String LOGISTICS_UBI= "UBI";
+// 上海义达国际物流有限公司
+public static final String LOGISTICS_YIDA= "YIDA";
+// 燕文
+public static final String LOGISTICS_YANWEN= "YANWEN";
+// 佳邮
+public static final String LOGISTICS_JIAYOU= "JIAYOU";
+// 深圳市润百国际物流有限公司
+public static final String LOGISTICS_RUNBAI= "RUNBAI";
+// DHLeC易橙互动-上海普货
+public static final String LOGISTICS_DHL= "DHL";
+// EWE Group Pty. Ltd.
+public static final String LOGISTICS_EWE= "EWE";
+// 中国邮政(新)
+public static final String LOGISTICS_YOUZHENG= "YOUZHENG";
+// 上海乐天速递有限公司
+public static final String LOGISTICS_LETIAN= "LETIAN";
+// 柏域斯供应链管理（上海）有限公司
+public static final String LOGISTICS_BAIYUSI= "BAIYUSI";
+// 菜鸟开放
+public static final String LOGISTICS_CAINIAO= "CAINIAO";

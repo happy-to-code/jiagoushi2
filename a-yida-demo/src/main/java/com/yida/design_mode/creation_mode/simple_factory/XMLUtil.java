@@ -1,4 +1,4 @@
-package com.yida.design_mode.simple_factory;
+package com.yida.design_mode.creation_mode.simple_factory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
