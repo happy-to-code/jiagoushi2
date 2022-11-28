@@ -6,6 +6,8 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Base64;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @Type: Demo.java
@@ -28,5 +30,7 @@ public class Demo {
         String s = "ABc1233";
         String format2 = String.format("%s.pdf", s);
         System.out.println("format2 = " + format2);
+        Map m = new HashMap<>();
+        m.put(1,1);
     }
 }
