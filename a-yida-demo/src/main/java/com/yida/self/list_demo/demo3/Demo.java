@@ -1,11 +1,12 @@
 package com.yida.self.list_demo.demo3;
 
-import cn.hutool.core.util.StrUtil;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @Type: Demo.java
@@ -17,16 +18,21 @@ import java.util.List;
 public class Demo {
     public static void main(String[] args) {
         List<Person> list = new ArrayList<>(10);
-        list.add(new Person(" xm", 1));
-        list.add(new Person("hh", 2));
-        list.add(new Person("ks", 3));
-        list.add(new Person("li ", 4));
-        list.add(new Person(" ", 4));
-        System.out.println("list = " + list);
-        list.stream().filter(item -> StrUtil.isNotBlank(item.getName().trim())).forEach(item -> {
-            item.setName("aa" + item.getName().trim());
-        });
-        System.out.println("after deal list = " + list);
+        // list.add(new Person("xm", 1));
+        // list.add(new Person("hh", 2));
+        // list.add(new Person("ks", 3));
+        // list.add(new Person("li ", 4));
+        // list.add(new Person(" ", 4));
+
+        Map<String, Person> map = list.stream().collect(Collectors.toMap(Person::getName, p -> p));
+        System.out.println(map.get("xm"));
+
+
+        // System.out.println("list = " + list);
+        // list.stream().filter(item -> StrUtil.isNotBlank(item.getName().trim())).forEach(item -> {
+        //     item.setName("aa" + item.getName().trim());
+        // });
+        // System.out.println("after deal list = " + list);
 
         // list.stream().forEach(item -> {
         //     item.setName(item.getName().trim());

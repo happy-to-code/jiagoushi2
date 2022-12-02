@@ -1,7 +1,5 @@
 package com.yida.pojo;
 
-import lombok.Data;
-
 import java.io.Serializable;
 
 /**
@@ -11,19 +9,49 @@ import java.io.Serializable;
  * @Date: 2022/11/14 9:44
  * @Version:
  */
-@Data
 public class Person implements Serializable {
 
     private static final long serialVersionUID = 8185480882553688096L;
 
+    public Integer id;
     private String name;
-    private Integer age;
+    public Integer age;
 
-    public void select(){
+
+    public void select() {
         System.out.println("person select");
     }
 
-    public void update(){
+    public void update() {
         System.out.println("person update");
+    }
+
+
+    public Person() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
