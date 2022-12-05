@@ -1,5 +1,6 @@
-package com.yida.reflect_d;
+package com.yida.reflect_d.d1;
 
+import com.yida.constants.ConstConstant;
 import com.yida.pojo.Person;
 
 /**
@@ -11,6 +12,14 @@ import com.yida.pojo.Person;
  */
 public class Demo {
     public static void main(String[] args) {
+        int a = 50;
+        System.out.println(a >>> 1);
+
+        Integer number1 = ConstConstant.ARABIC_NUMBER_1;
+        System.out.println("number1 = " + number1);
+        System.out.println(number1.toString().equals("1"));
+
+
         Person person = new Person();
         person.setAge(10);
         person.setName("xiaoming");
