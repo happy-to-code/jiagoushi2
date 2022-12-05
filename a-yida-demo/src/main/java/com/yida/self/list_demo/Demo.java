@@ -37,7 +37,8 @@ public class Demo {
         System.out.println("namesSet = " + namesSet);
 
 
-        LinkedHashMap<String, List<Boy>> collect = boys.stream().collect(Collectors.groupingBy(Boy::getName, LinkedHashMap::new, Collectors.toList()));
+        LinkedHashMap<String, List<Boy>> collect = boys.stream()
+                .collect(Collectors.groupingBy(Boy::getName, LinkedHashMap::new, Collectors.toList()));
         System.out.println("collect = " + collect);
 
         List<List<Boy>> lists = Lists.partition(boys, 2);
