@@ -3,3 +3,6 @@ server:
 spring:
   application:
     name: my-demo
+
+abc:
+  d: yse

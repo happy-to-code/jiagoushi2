@@ -13,5 +13,3 @@ spring:
         namespace: e1af5b3b-4fcb-4684-9289-549ff73b95d3
         enabled: true
         file-extension: yaml
-    sentinel:
-      enabled: true
