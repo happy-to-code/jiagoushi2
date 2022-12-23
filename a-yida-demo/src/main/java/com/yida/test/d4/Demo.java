@@ -1,5 +1,7 @@
 package com.yida.test.d4;
 
+import cn.hutool.core.date.DateUtil;
+
 /**
  * @Type: Demo.java
  * @Desc:
@@ -24,5 +26,16 @@ public class Demo {
                 System.out.println("\"12312\" = " + "12312");
         }
         System.out.println("labelDataBytes = " + labelDataBytes);
+
+
+
+        long purchaseTime = DateUtil.parse("2022-12-01 00:00:00").getTime() / 1000;
+        long storageTime = DateUtil.parse("2022-12-01 06:00:00").getTime() / 1000;
+        long day = (storageTime - purchaseTime) / 3600 / 24;
+        System.out.println("day = " + day);
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("i = " + i);
+        }
     }
 }

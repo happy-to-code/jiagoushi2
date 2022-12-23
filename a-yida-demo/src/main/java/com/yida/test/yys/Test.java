@@ -1,6 +1,8 @@
 package com.yida.test.yys;
 
 import java.lang.reflect.Field;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 /**
  * @Type: Test.java
@@ -24,6 +26,10 @@ public class Test {
         if (a == (Integer) 1 && a == (Integer) 2 && a == (Integer) 3) {
             System.out.println("Success");
         }
+
+
+        BigDecimal decimal = new BigDecimal("12.11531231231");
+        System.out.println(decimal.setScale(2, RoundingMode.HALF_UP));
     }
 }
 
