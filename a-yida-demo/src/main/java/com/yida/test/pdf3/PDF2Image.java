@@ -9,6 +9,7 @@ import java.io.File;
 
 public class PDF2Image {
     public static void main(String[] args) throws Exception { // 加载测试文档
+        long start = System.currentTimeMillis();
         // 加载测试文档
         PdfDocument pdf = new PdfDocument();
         pdf.loadFromFile("E:\\java_demo\\jiagoushi2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\pdf3\\11.29THD批量 美东.pdf");
@@ -29,9 +30,11 @@ public class PDF2Image {
                 ImageIO.write(image, "PNG", output);
             }
         }
+        long end = System.currentTimeMillis();
+
+        // 28226
+        System.out.println("总耗时：" + (end - start));
     }
-
-
 
 
 }

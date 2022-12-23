@@ -35,6 +35,7 @@ public class SaveImagesInPdf extends PDFStreamEngine {
      * @throws IOException If there is an error parsing the document.
      */
     public static void main(String[] args) throws IOException {
+        long start = System.currentTimeMillis();
         PDDocument document = null;
         String fileName = "E:\\java_demo\\jiagoushi2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\pdf4\\11.29THD批量 美东.pdf";
         try {
@@ -51,6 +52,10 @@ public class SaveImagesInPdf extends PDFStreamEngine {
                 document.close();
             }
         }
+        long end = System.currentTimeMillis();
+
+        // 7274
+        System.out.println("pdfbox总耗时：" + (end - start));
     }
 
     /**
