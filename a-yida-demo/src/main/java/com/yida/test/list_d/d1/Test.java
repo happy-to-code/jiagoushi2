@@ -51,7 +51,7 @@ public class Test {
         // 相差毫秒数
         long millis = DateUtil.between(start, end, DateUnit.MS);
         // 相差1天(天)
-        String formatDay = DateUtil.formatBetween(millis, BetweenFormater.Level.DAY);
+        String formatDay = DateUtil.formatBetween(millis, BetweenFormatter.Level.DAY);
         System.out.println("formatDay = " + formatDay);
 
 
