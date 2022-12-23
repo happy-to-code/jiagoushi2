@@ -14,9 +14,12 @@ import java.io.File;
  */
 public class Test {
     public static void main(String[] args) throws TesseractException {
+        // String path = "C:\\myfile\\yida-jgs2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\read_text_png\\demo_1\\img.png";
+        String path = "C:\\myfile\\yida-jgs2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\read_text_png\\demo_1\\img_1.png";
+        
         Tesseract tesseract = new Tesseract();
-        tesseract.setDatapath("E:/mysoftware/Tesseract-OCR/tessdata");
-        System.out.println(tesseract.doOCR(new File("E:\\java_demo\\jiagoushi2\\Image_0.png")));
+        tesseract.setDatapath("C:\\myfile\\yida-jgs2\\a-yida-demo\\src\\main\\resources\\tessdata");
+        System.out.println(tesseract.doOCR(new File(path)));
 
     }
 }

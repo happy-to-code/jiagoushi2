@@ -37,7 +37,7 @@ public class SaveImagesInPdf extends PDFStreamEngine {
     public static void main(String[] args) throws IOException {
         long start = System.currentTimeMillis();
         PDDocument document = null;
-        String fileName = "E:\\java_demo\\jiagoushi2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\pdf4\\11.29THD批量 美东.pdf";
+        String fileName = "C:\\myfile\\yida-jgs2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\pdf4\\11.29THD批量 美东.pdf";
         try {
             document = PDDocument.load(new File(fileName));
             SaveImagesInPdf printer = new SaveImagesInPdf();
