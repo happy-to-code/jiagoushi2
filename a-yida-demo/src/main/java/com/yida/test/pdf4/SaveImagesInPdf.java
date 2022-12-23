@@ -25,7 +25,7 @@ public class SaveImagesInPdf extends PDFStreamEngine {
      *
      * @throws IOException If there is an error loading text stripper properties.
      */
-    public SaveImagesInPdf() throws IOException {
+    public SaveImagesInPdf()  {
     }
 
     public int imageNumber = 1;
