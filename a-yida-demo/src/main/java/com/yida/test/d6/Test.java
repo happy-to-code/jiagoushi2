@@ -28,5 +28,7 @@ public class Test {
 
         String osName = System.getProperty("os.name");
         System.out.println(osName);
+
+        // curl "https://openapi.lingxing.com/erp/data/seller/lists?access_token=356a7d2e-ec50-4119-ab17-79cc7e54d1b2&app_key=ak_w2nJBeSre5OZd&timestamp=1672304113&sign=KhBlkHYY4EyGlkCG9%2F6JYIpTl4UhhtAWuBBfe2y%2BC5jnXtmOg1Q8EoQDgP24EMa6"
     }
 }

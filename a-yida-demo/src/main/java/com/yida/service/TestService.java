@@ -1,5 +1,9 @@
 package com.yida.service;
 
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
+
 /**
  * @Type: TestService.java
  * @Desc:
@@ -17,4 +21,8 @@ public interface TestService {
      * @return
      */
      String testGet(String param1, Integer param2) ;
+
+    String testSyncT() throws InterruptedException, ExecutionException, TimeoutException;
+    String testSyncT2() throws InterruptedException, ExecutionException, TimeoutException;
+    List<String> getList2() throws InterruptedException;
 }
