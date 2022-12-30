@@ -1,4 +1,4 @@
-package com.yida.test2.d1;
+package com.yida.test2.thread_1.d1;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
