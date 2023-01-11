@@ -1,0 +1,99 @@
+if (StrUtil.isNotBlank(req.getPageSize())) {
+            paramsMap.put("pageSize", req.getPageSize());
+        }
+
+
+if (StrUtil.isNotBlank(req.getName())){
+paramsMap.put("name",req.getName());
+}
+if (StrUtil.isNotBlank(req.getSku())){
+paramsMap.put("sku",req.getSku());
+}
+if (StrUtil.isNotBlank(req.getIsGroup())){
+paramsMap.put("isGroup",req.getIsGroup());
+}
+if (StrUtil.isNotBlank(req.getPurchaseCost())){
+paramsMap.put("purchaseCost",req.getPurchaseCost());
+}
+if (StrUtil.isNotBlank(req.getPurchaseDays())){
+paramsMap.put("purchaseDays",req.getPurchaseDays());
+}
+if (StrUtil.isNotBlank(req.getFullCid())){
+paramsMap.put("fullCid",req.getFullCid());
+}
+if (StrUtil.isNotBlank(req.getRemark())){
+paramsMap.put("remark",req.getRemark());
+}
+if (StrUtil.isNotBlank(req.getDevId())){
+paramsMap.put("devId",req.getDevId());
+}
+if (StrUtil.isNotBlank(req.getNeedAssembleProcess())){
+paramsMap.put("needAssembleProcess",req.getNeedAssembleProcess());
+}
+if (StrUtil.isNotBlank(req.getIdentificationCode())){
+paramsMap.put("identificationCode",req.getIdentificationCode());
+}
+if (StrUtil.isNotBlank(req.getWeight())){
+paramsMap.put("weight",req.getWeight());
+}
+if (StrUtil.isNotBlank(req.getLength())){
+paramsMap.put("length",req.getLength());
+}
+if (StrUtil.isNotBlank(req.getWidth())){
+paramsMap.put("width",req.getWidth());
+}
+if (StrUtil.isNotBlank(req.getHeight())){
+paramsMap.put("height",req.getHeight());
+}
+if (StrUtil.isNotBlank(req.getCartonLength())){
+paramsMap.put("cartonLength",req.getCartonLength());
+}
+if (StrUtil.isNotBlank(req.getCartonWidth())){
+paramsMap.put("cartonWidth",req.getCartonWidth());
+}
+if (StrUtil.isNotBlank(req.getCartonHeight())){
+paramsMap.put("cartonHeight",req.getCartonHeight());
+}
+if (StrUtil.isNotBlank(req.getCartonWeight())){
+paramsMap.put("cartonWeight",req.getCartonWeight());
+}
+if (StrUtil.isNotBlank(req.getCartonQty())){
+paramsMap.put("cartonQty",req.getCartonQty());
+}
+if (StrUtil.isNotBlank(req.getImgUrl())){
+paramsMap.put("imgUrl",req.getImgUrl());
+}
+if (StrUtil.isNotBlank(req.getDeclareNameCh())){
+paramsMap.put("declareNameCh",req.getDeclareNameCh());
+}
+if (StrUtil.isNotBlank(req.getDeclareNameEn())){
+paramsMap.put("declareNameEn",req.getDeclareNameEn());
+}
+if (StrUtil.isNotBlank(req.getDeclareCharge())){
+paramsMap.put("declareCharge",req.getDeclareCharge());
+}
+if (StrUtil.isNotBlank(req.getDeclareWeight())){
+paramsMap.put("declareWeight",req.getDeclareWeight());
+}
+if (StrUtil.isNotBlank(req.getHsCode())){
+paramsMap.put("hsCode",req.getHsCode());
+}
+if (StrUtil.isNotBlank(req.getPurchaserId())){
+paramsMap.put("purchaserId",req.getPurchaserId());
+}
+if (StrUtil.isNotBlank(req.getSourceUrls())){
+paramsMap.put("sourceUrls",req.getSourceUrls());
+}
+if (StrUtil.isNotBlank(req.getProcessCost())){
+paramsMap.put("processCost",req.getProcessCost());
+}
+if (StrUtil.isNotBlank(req.getIsNeedQc())){
+paramsMap.put("isNeedQc",req.getIsNeedQc());
+}
+
+
+        "title":"盘库报告",
+        "shopId":"59046",
+        "reportType":"inventory",
+        "startDate":"2023-01-10",
+        "endDate":"2023-01-10",
