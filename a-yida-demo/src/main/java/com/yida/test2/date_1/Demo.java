@@ -30,5 +30,17 @@ public class Demo {
         System.out.println("dateTime = " + dateTime);
         String format = DateUtil.format(dateTime, DatePattern.NORM_DATE_FORMATTER);
         System.out.println("format = " + format);
+        System.out.println("-------------------------------------------------------------");
+        DateTime lastMonth = DateUtil.offsetMonth(new Date(), -1);
+        System.out.println("lastMonth = " + lastMonth);
+
+        // 获取当前日期
+        DateTime now2 = DateUtil.date();
+        DateTime lastMonth2 = DateUtil.offsetMonth(now2, -1);
+
+        String currentTimeStr = DateUtil.format(now2, DatePattern.NORM_DATE_PATTERN);
+        System.out.println("currentTimeStr = " + currentTimeStr);
+        String lastMonthTimeStr = DateUtil.format(lastMonth2, DatePattern.NORM_DATE_PATTERN);
+        System.out.println("lastMonthTimeStr = " + lastMonthTimeStr);
     }
 }
