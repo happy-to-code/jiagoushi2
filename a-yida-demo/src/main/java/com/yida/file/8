@@ -1,0 +1,15 @@
+private String date;
+private String fnsku;
+private String asin;
+private String msku;
+private String title;
+private String eventType;
+private String referenceId;
+private String quantity;
+private String fulfillmentCenter;
+private String disposition;
+private String reason;
+private String country;
+private String reconciledQuantity;
+private String unreconciledQuantity;
+private String dateAndTime;

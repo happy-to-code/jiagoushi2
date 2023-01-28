@@ -4,6 +4,7 @@ import cn.hutool.json.JSONUtil;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @Type: Demo.java
@@ -27,5 +28,9 @@ public class Demo {
 
         List<String> list3 = JSONUtil.toList(JSONUtil.parseArray(s), String.class);
         System.out.println("list3 = " + list3);
+
+
+        Objects ss = null;
+        System.out.println("ss.toString() = " + ss.toString());
     }
 }
