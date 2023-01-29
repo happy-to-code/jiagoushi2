@@ -1,0 +1,28 @@
+CREATE TABLE `sellfox_amazon_removal_order_data_report`
+(
+    `id`                    varchar(36) NOT NULL,
+    `create_by`             varchar(50) DEFAULT NULL COMMENT '创建人',
+    `create_time`           datetime    DEFAULT NULL COMMENT '创建日期',
+    `update_by`             varchar(50) DEFAULT NULL COMMENT '更新人',
+    `update_time`           datetime    DEFAULT NULL COMMENT '更新日期',
+    `amz_report_id`         varchar(50) DEFAULT NULL COMMENT '报告ID',
+    `shop_name`             varchar(50) DEFAULT NULL COMMENT '店铺名称',
+    `report_type`           varchar(50) DEFAULT NULL COMMENT '报告类型',
+    `report_time_range_str` varchar(50) DEFAULT NULL COMMENT '报告时间范围',
+    `request_date`          varchar(50) default null comment 'request-date',
+    `order_id`              varchar(50) default null comment 'order-id',
+    `order_type`            varchar(50) default null comment 'order-type',
+    `order_status`          varchar(50) default null comment 'order-status',
+    `last_updated_date`     varchar(50) default null comment 'last-updated-date',
+    `sku`                   varchar(50) default null comment 'sku',
+    `fnsku`                 varchar(50) default null comment 'fnsku',
+    `disposition`           varchar(50) default null comment 'disposition',
+    `requested_quantity`    varchar(50) default null comment 'requested-quantity',
+    `cancelled_quantity`    varchar(50) default null comment 'cancelled-quantity',
+    `disposed_quantity`     varchar(10) default null comment 'disposed-quantity',
+    `shipped_quantity`      varchar(50) default null comment 'shipped-quantity',
+    `in_process_quantity`   varchar(50) default null comment 'in-process-quantity',
+    `removal_fee`           varchar(50) default null comment 'removal-fee',
+    `currency`              varchar(50) default null comment 'currency',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='sellfox:移除订单详情报告';

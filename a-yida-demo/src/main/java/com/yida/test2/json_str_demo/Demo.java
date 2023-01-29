@@ -1,10 +1,12 @@
 package com.yida.test2.json_str_demo;
 
 import cn.hutool.json.JSONArray;
+import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.StringJoiner;
 
 /**
@@ -22,7 +24,27 @@ public class Demo {
 
         String boyJsonStr = JSONUtil.toJsonStr(boys);
         System.out.println("boyJsonStr = " + boyJsonStr);
+        System.out.println("---------------------1----------------------");
+        JSONArray objects1 = JSONUtil.parseArray(boyJsonStr);
+        System.out.println("objects1 = " + objects1);
+        System.out.println("objects1.size() = " + objects1.size());
+        Object o1 = objects1.get(0);
+        System.out.println("o1 = " + o1);
+        JSONObject entries = JSONUtil.parseObj(o1);
+        System.out.println("entries = " + entries);
+        // entries.
 
+
+        Map<String,Object> m = (Map<String,Object>) o1;
+        System.out.println("m = " + m);
+        Object name = m.get("name");
+        System.out.println("name = " + name);
+
+
+        System.out.println("----------------------2---------------------");
+
+
+        // JSONUtil.toJsonStr(spAdProductReportList)
         List<Boy> boyList = JSONUtil.toList(JSONUtil.parseArray(boyJsonStr), Boy.class);
         System.out.println("boyList = " + boyList);
 

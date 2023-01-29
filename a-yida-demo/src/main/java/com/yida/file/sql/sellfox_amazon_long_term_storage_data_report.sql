@@ -1,0 +1,28 @@
+CREATE TABLE `sellfox_amazon_long_term_storage_data_report`
+(
+    `id`                                                 varchar(36) NOT NULL,
+    `create_by`                                          varchar(50)  DEFAULT NULL COMMENT '创建人',
+    `create_time`                                        datetime     DEFAULT NULL COMMENT '创建日期',
+    `update_by`                                          varchar(50)  DEFAULT NULL COMMENT '更新人',
+    `update_time`                                        datetime     DEFAULT NULL COMMENT '更新日期',
+    `amz_report_id`                                      varchar(50)  DEFAULT NULL COMMENT '报告ID',
+    `shop_name`                                          varchar(50)  DEFAULT NULL COMMENT '店铺名称',
+    `report_type`                                        varchar(50)  DEFAULT NULL COMMENT '报告类型',
+    `report_time_range_str`                              varchar(50)  DEFAULT NULL COMMENT '报告时间范围',
+    `snapshot_date`                                      varchar(50)  default null comment 'snapshot-date',
+    `sku`                                                varchar(50)  default null comment 'sku',
+    `fnsku`                                              varchar(50) default null comment 'fnsku',
+    `asin`                                               varchar(50)  default null comment 'asin',
+    `product_name`                                       varchar(300)  default null comment 'product-name',
+    `condition`                                          varchar(50)  default null comment 'condition',
+    `qty_charged_long_time_range_long_term_storage_fee`  varchar(50)  default null comment 'qty-charged-long-time-range-long-term-storage-fee',
+    `per_unit_volume`                                    varchar(50)  default null comment 'per-unit-volume',
+    `currency`                                           varchar(50)  default null comment 'currency',
+    `long_time_range_long_term_storage_fee`              varchar(50)  default null comment 'long-time-range-long-term-storage-fee',
+    `qty_charged_short_time_range_long_term_storage_fee` varchar(50)  default null comment 'qty-charged-short-time-range-long-term-storage-fee',
+    `short_time_range_long_term_storage_fee`             varchar(50)  default null comment 'short-time-range-long-term-storage-fee',
+    `volume_unit`                                        varchar(50)  default null comment 'volume-unit',
+    `country`                                            varchar(50)  default null comment 'country',
+    `enrolled_in_small_and_light`                        varchar(50)  default null comment 'enrolled-in-small-and-light',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='sellfox:长期仓储费报告';
