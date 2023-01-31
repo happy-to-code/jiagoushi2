@@ -12,7 +12,7 @@ public class LoadPDF {
         long startTime = System.currentTimeMillis();
         //通过文件和输入流都可以加载pdf文件
         // PDDocument doc = PDDocument.load(new FileInputStream("E:\\java_demo\\jiagoushi2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\pdfbox\\test003.pdf"));
-        PDDocument doc = PDDocument.load(new FileInputStream("C:\\Users\\yida\\Desktop\\littleFile\\张益飞_javaEE研发工程师.pdf"));
+        PDDocument doc = PDDocument.load(new FileInputStream("E:\\java_demo\\jiagoushi2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\pdfbox\\1670981634811-2022NovMonthlySummary.pdf"));
 
         PDFTextStripper text = new PDFTextStripper();
         //获取全文件的所有文本
