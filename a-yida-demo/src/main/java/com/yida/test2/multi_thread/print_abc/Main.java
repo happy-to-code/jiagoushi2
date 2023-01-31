@@ -1,16 +1,14 @@
 package com.yida.test2.multi_thread.print_abc;
 
+import lombok.SneakyThrows;
+
 class PrintABC {
     private volatile int value = 1;
 
-    void printA() {
+    void printA() throws InterruptedException {
         synchronized (this) {
             while (value != 1) {
-                try {
-                    wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                wait();
             }
             System.out.println(Thread.currentThread().getName() + ": A");
             value = 2;
@@ -19,14 +17,10 @@ class PrintABC {
 
     }
 
-    void printB() {
+    void printB() throws InterruptedException {
         synchronized (this) {
             while (value != 2) {
-                try {
-                    wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                wait();
             }
             System.out.println(Thread.currentThread().getName() + ": B");
             value = 3;
@@ -34,14 +28,10 @@ class PrintABC {
         }
     }
 
-    void printC() {
+    void printC() throws InterruptedException {
         synchronized (this) {
             while (value != 3) {
-                try {
-                    wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                wait();
             }
             System.out.println(Thread.currentThread().getName() + ": C");
             value = 1;
@@ -54,6 +44,7 @@ public class Main {
     public static void main(String[] args) {
         PrintABC printABC = new PrintABC();
         new Thread(new Runnable() {
+            @SneakyThrows
             @Override
             public void run() {
                 for (int i = 0; i < 5; i++) {
@@ -61,7 +52,9 @@ public class Main {
                 }
             }
         }, "线程一").start();
+
         new Thread(new Runnable() {
+            @SneakyThrows
             @Override
             public void run() {
                 for (int i = 0; i < 5; i++) {
@@ -69,7 +62,9 @@ public class Main {
                 }
             }
         }, "线程二").start();
+
         new Thread(new Runnable() {
+            @SneakyThrows
             @Override
             public void run() {
                 for (int i = 0; i < 5; i++) {
