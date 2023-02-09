@@ -16,6 +16,7 @@ public enum TestEnum {
     private String name;
     private Integer age;
 
+
     TestEnum(String name, Integer age) {
         this.name = name;
         this.age = age;
