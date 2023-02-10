@@ -1,6 +1,7 @@
 package com.yida.controller;
 
 import com.yida.service.TestService;
+import org.apache.commons.exec.Executor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Random;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeoutException;
 
 /**
@@ -26,6 +30,21 @@ public class MyTestController {
 	
 	@Value("${abc.d}")
 	private String d;
+	
+	@GetMapping("cpu")
+	public String cpu(){
+		ExecutorService pool = Executors.newFixedThreadPool(5);
+		pool.execute(()->{
+			while (true){
+				int a = new Random().nextInt();
+				int b = new Random().nextInt();
+				int i = a * b;
+			}
+		});
+		
+		
+		return "success";
+	}
 	
 	@GetMapping("get")
 	public String getTest(HttpServletRequest rq, HttpServletResponse rs) {
