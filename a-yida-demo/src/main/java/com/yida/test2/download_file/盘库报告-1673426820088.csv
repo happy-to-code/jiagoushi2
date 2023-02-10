@@ -1,0 +1,3 @@
+return-date,order-id,sku,asin,fnsku,product-name,quantity,fulfillment-center-id,detailed-disposition,reason,license-plate-number,customer-comments
+2022-11-14T15:48:47-08:00,114-0599381-7065802,GJ16311-E001-17-US,B0919GGNLG,X0030INZHP,"Saker Miter Saw Protractor|7-Inch Aluminum Protractor Angle Finder Featuring Precision Laser-Inside & Outside Miter Angle Finder for Carpenters, Plumb",1,LAS2,SELLABLE,NOT_AS_DESCRIBED,LPNRRFB0309501
+2022-11-12T12:05:25-08:00,114-3970725-3102616,GJ16311-E001-17-US,B0919GGNLG,X0030INZHP,"Saker Miter Saw Protractor|7-Inch Aluminum Protractor Angle Finder Featuring Precision Laser-Inside & Outside Miter Angle Finder for Carpenters, Plumb",1,OAK7,SELLABLE,NOT_AS_DESCRIBED,LPNPMIE0506622

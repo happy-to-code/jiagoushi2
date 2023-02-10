@@ -1,0 +1,71 @@
+CREATE TABLE `sellfox_ad_query_speed`
+(
+    `id`                                   varchar(36) NOT NULL,
+    `create_by`                            varchar(50) DEFAULT NULL COMMENT '创建人',
+    `create_time`                          datetime    DEFAULT NULL COMMENT '创建日期',
+    `update_by`                            varchar(50) DEFAULT NULL COMMENT '更新人',
+    `update_time`                          datetime    DEFAULT NULL COMMENT '更新日期',
+    `shop`                                 varchar(50) default null comment '店铺',
+    `date`                                 varchar(50) default null comment '日期',
+    `activity`                             varchar(50) default null comment '广告活动',
+    `expenses`                             varchar(50) default null comment '广告花费',
+    `exposure`                             varchar(50) default null comment '广告曝光量',
+    `click_through`                        varchar(50) default null comment '广告点击量',
+    `cpc`                                  varchar(50) default null comment 'CPC',
+    `click_rate`                           varchar(50) default null comment '广告点击率',
+    `conversion_rate`                      varchar(50) default null comment '广告转化率',
+    `acos`                                 varchar(50) default null comment 'ACoS',
+    `roas`                                 varchar(50) default null comment 'ROAS',
+    `order_amount`                         varchar(50) default null comment '广告订单量',
+    `advertising_product_amount`           varchar(50) default null comment '本广告产品订单量',
+    `orders_for_other_products`            varchar(50) default null comment '其他产品广告订单量',
+    `sales`                                varchar(50) default null comment '广告销售额',
+    `sales_of_this_advertising_product`    varchar(50) default null comment '本广告产品销售额',
+    `sales_of_other_products`              varchar(50) default null comment '“品牌新买家”其他产品广告销售额',
+    `order_conversion_rate`                varchar(50) default null comment '“品牌新买家”订单转化率',
+    `order_quantity`                       varchar(50) default null comment '“品牌新买家”订单量',
+    `proportion_orders`                    varchar(50) default null comment '“品牌新买家”订单占比',
+    `sales_of_brand_new_buyers`            varchar(50) default null comment '“品牌新买家”销售额',
+    `percentage_sales`                     varchar(50) default null comment '“品牌新买家”销售额百分比',
+    `sales_amount`                         varchar(50) default null comment '“品牌新买家”销量',
+    `proportion_of_sales_brand_new_buyers` varchar(50) default null comment '“品牌新买家”销量占比',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='sellfox查询广告报告进度';
+
+
+CREATE TABLE `sellfox_amazon_table_query_speed`
+(
+    `id`                  varchar(36) NOT NULL,
+    `create_by`           varchar(50) DEFAULT NULL COMMENT '创建人',
+    `create_time`         datetime    DEFAULT NULL COMMENT '创建日期',
+    `update_by`           varchar(50) DEFAULT NULL COMMENT '更新人',
+    `update_time`         datetime    DEFAULT NULL COMMENT '更新日期',
+    `return_date`          varchar(50) default null comment 'return-date',
+    `order_id`             varchar(50) default null comment 'order-id',
+    `sku`                 varchar(50) default null comment 'sku',
+    `asin`                varchar(50) default null comment 'asin',
+    `fnsku`               varchar(50) default null comment 'fnsku',
+    `product_name`         varchar(50) default null comment 'product-name',
+    `quantity`            varchar(50) default null comment 'quantity',
+    `fulfillment_center_id` varchar(50) default null comment 'fulfillment-center-id',
+    `detailed_disposition` varchar(100) default null comment 'detailed-disposition',
+    `reason`              varchar(100) default null comment 'reason',
+    `license_plate_number`  varchar(20) default null comment 'license-plate-number',
+    `customer_comments`    varchar(100) default null comment 'customer-comments',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='sellfox--Amazon原表下载-查询任务进度';
+
+
+`returnDate`
+varchar(50) default null comment 'return-date',
+    `orderId` varchar(50) default null comment 'order-id',
+    `sku` varchar(50) default null comment 'sku',
+    `asin` varchar(50) default null comment 'asin',
+    `fnsku` varchar(50) default null comment 'fnsku',
+    `productName` varchar(50) default null comment 'product-name',
+    `quantity` varchar(50) default null comment 'quantity',
+    `fulfillmentCenterId` varchar(50) default null comment 'fulfillment-center-id',
+    `detailedDisposition` varchar(50) default null comment 'detailed-disposition',
+    `reason` varchar(50) default null comment 'reason',
+    `licensePlateNumber` varchar(50) default null comment 'license-plate-number',
+    `customerComments` varchar(50) default null comment 'customer-comments',

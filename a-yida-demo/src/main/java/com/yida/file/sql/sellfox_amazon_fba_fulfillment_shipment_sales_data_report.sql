@@ -1,0 +1,27 @@
+CREATE TABLE `sellfox_amazon_fba_fulfillment_shipment_sales_data_report`
+(
+    `id`                    varchar(36) NOT NULL,
+    `create_by`             varchar(50) DEFAULT NULL COMMENT '创建人',
+    `create_time`           datetime    DEFAULT NULL COMMENT '创建日期',
+    `update_by`             varchar(50) DEFAULT NULL COMMENT '更新人',
+    `update_time`           datetime    DEFAULT NULL COMMENT '更新日期',
+    `amz_report_id`         varchar(50) DEFAULT NULL COMMENT '报告ID',
+    `shop_name`             varchar(50) DEFAULT NULL COMMENT '店铺名称',
+    `report_type`           varchar(50) DEFAULT NULL COMMENT '报告类型',
+    `report_time_range_str` varchar(50) DEFAULT NULL COMMENT '报告时间范围',
+    `shipment-date`         varchar(50) default null comment 'shipment-date',
+    `sku`                   varchar(50) default null comment 'sku',
+    `fnsku`                 varchar(50) default null comment 'fnsku',
+    `asin`                  varchar(50) default null comment 'asin',
+    `fulfillment_center_id` varchar(50) default null comment 'fulfillment-center-id',
+    `quantity`              varchar(50) default null comment 'quantity',
+    `amazon_order_id`       varchar(50) default null comment 'amazon-order-id',
+    `currency`              varchar(50) default null comment 'currency',
+    `item_price_per_unit`   varchar(50) default null comment 'item-price-per-unit',
+    `shipping_price`        varchar(50) default null comment 'shipping-price',
+    `gift_wrap_price`       varchar(20) default null comment 'gift-wrap-price',
+    `ship_city`             varchar(50) default null comment 'ship-city',
+    `ship_state`            varchar(10) default null comment 'ship-state',
+    `ship_postal_code`      varchar(50) default null comment 'ship-postal-code',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='sellfox:已完成销售订单报告';

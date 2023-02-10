@@ -26,8 +26,9 @@ public class Calculator {
 
     public int multiple(int operand1, int operand2) {
         result = operand1 * operand2;
-        for (; ; ) {                    // 死循环
-        }
+        // for (; ; ) {                    // 死循环
+        // }
+        return result;
     }
 
     public int divide(int operand1, int operand2) {
