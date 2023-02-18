@@ -1,8 +1,0 @@
-com\yueda\order\mapper\OrderInfoMapper.class
-com\yueda\order\service\OrderInfoService.class
-com\yueda\order\controller\OrderInfoController.class
-com\yueda\order\config\LogConfiguration.class
-com\yueda\order\mq\MessageReceiver.class
-com\yueda\order\config\InterceptorConfiguration.class
-com\yueda\order\service\impl\OrderInfoServiceImpl.class
-com\yueda\OrderApplication.class
