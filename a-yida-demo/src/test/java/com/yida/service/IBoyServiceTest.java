@@ -29,8 +29,13 @@ public class IBoyServiceTest extends TestCase {
 	
 	@Test
 	public void getByIdTest(){
-		
 		Boy byId = iBoyService.getById("1626944512803270650");
 		System.out.println("byId = " + byId);
+	}
+	
+	
+	@Test
+	public void transactionalAdd(){
+		iBoyService.saveBoy();
 	}
 }
