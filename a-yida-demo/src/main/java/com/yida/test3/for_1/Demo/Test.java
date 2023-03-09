@@ -1,7 +1,9 @@
 package com.yida.test3.for_1.Demo;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -21,5 +23,9 @@ public class Test {
 				return;
 			}
 		});
+		
+		Set set = new HashSet<>();
+		
+		set.add(1);
 	}
 }
