@@ -1,0 +1,15 @@
+{"year":2023,
+"month":3,
+"defectRate":23,
+"singleRelatedParty":23,
+"allRelatedParties":23,
+"securitiesInvestment":23,
+"singleGroupCustomers":23,
+"partiesOfSingleShareholder":23,
+"leverageRatio":23,
+"singleCustomerConcentration":23,
+"netAssets":23,
+"liquidityRatio":23,
+"provisionCoverage":23,
+"leasedAssets":23
+}
