@@ -1,0 +1,119 @@
+本季度是否有风险            业务部门重大风险
+季度          本季度是否有风险
+是否为紧急情况         季度
+业务部门            是否为紧急情况
+填报日期            业务部门
+是否有清单中的事项发生         填报日期
+项目或事件           是否有清单中的事项发生
+合同编号            项目或事件
+租赁产品类型          合同编号
+起租日期            租赁产品类型
+终止日期            起租日期
+净剩余本金           终止日期
+估计风险总体水平            净剩余本金
+涉事项目历史信用情况描述            估计风险总体水平
+涉事项目当前情况描述          涉事项目历史信用情况描述
+行业风险是否有变大的趋势            涉事项目当前情况描述
+项目所在地区是否有风险变大的趋势            行业风险是否有变大的趋势
+如上述风险存在，将采取何种方式减弱风险影响           项目所在地区是否有风险变大的趋势
+预估措施的成效         如上述风险存在，将采取何种方式减弱风险影响
+预计仍会存在的问题           预估措施的成效
+业务部门判断是否为重大风险           预计仍会存在的问题
+预警情况            业务部门判断是否为重大风险
+预警等级            预警情况
+是否为重大风险         预警等级
+附件          是否为重大风险
+
+this_quarter_has_risk_or_not
+quarter
+emergency_or_not
+business_department
+filling_date
+do_any_items_on_the_list_occur
+project_or_event
+contract_number
+rental_product_type
+starting_date_of_lease
+termination_date
+net_remaining_principal
+estimate_overall_level_of_risk
+history_project_situation_desc
+current_project_situation_desc
+trend_increasing_or_not
+trend_increasing_area_or_not
+measures
+effectiveness_of_measures
+expected_remaining_issues
+business_significant_risk_or_not
+warning_situation
+warning_level
+significant_risk_or_not
+attachment
+
+
+
+
+业务部门重大风险
+本季度是否有风险
+季度
+是否为紧急情况
+业务部门
+填报日期
+是否有清单中的事项发生
+项目或事件
+合同编号
+租赁产品类型
+起租日期
+终止日期
+净剩余本金
+估计风险总体水平
+涉事项目历史信用情况描述
+涉事项目当前情况描述
+行业风险是否有变大的趋势
+项目所在地区是否有风险变大的趋势
+如上述风险存在，将采取何种方式减弱风险影响
+预估措施的成效
+预计仍会存在的问题
+业务部门判断是否为重大风险
+预警情况
+预警等级
+是否为重大风险
+附件
+
+
+
+
+
+
+
+
+
+
+
+
+
+本季度是否有风险
+季度
+是否为紧急情况
+业务部门
+填报日期
+是否有清单中的事项发生
+项目或事件
+合同编号
+租赁产品类型
+起租日期
+终止日期
+净剩余本金
+估计风险总体水平
+涉事项目历史信用情况描述
+涉事项目当前情况描述
+行业风险是否有变大的趋势
+项目所在地区是否有风险变大的趋势
+如上述风险存在，将采取何种方式减弱风险影响
+预估措施的成效
+预计仍会存在的问题
+业务部门判断是否为重大风险
+预警情况
+预警等级
+是否为重大风险
+附件

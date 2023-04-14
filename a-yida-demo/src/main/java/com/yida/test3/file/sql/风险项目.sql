@@ -226,3 +226,136 @@ CREATE TABLE `t_early_warning_tracking`
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_0900_ai_ci COMMENT ='预警跟踪';
+
+
+CREATE TABLE `t_major_risks_for_business_units`
+(
+    `id`                               varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'ID',
+    `this_quarter_has_risk_or_not`     bit(1)                                                       default null comment '本季度是否有风险',
+    `quarter`                          varchar(32)                                                  default null comment '季度',
+    `emergency_or_not`                 bit(1)                                                       default null comment '是否为紧急情况',
+    `business_department`              varchar(32)                                                  default null comment '业务部门',
+    `filling_date`                     datetime                                                     default null comment '填报日期',
+    `do_any_items_on_the_list_occur`   bit(1)                                                       default null comment '是否有清单中的事项发生',
+    `project_or_event`                 varchar(50)                                                  default null comment '项目或事件',
+    `contract_number`                  varchar(50)                                                  default null comment '合同编号',
+    `rental_product_type`              varchar(32)                                                  default null comment '租赁产品类型',
+    `starting_date_of_lease`           datetime                                                     default null comment '起租日期',
+    `termination_date`                 datetime                                                     default null comment '终止日期',
+    `net_remaining_principal`          varchar(32)                                                  default null comment '净剩余本金',
+    `estimate_overall_level_of_risk`   varchar(32)                                                  default null comment '估计风险总体水平',
+    `history_project_situation_desc`   varchar(100)                                                 default null comment '涉事项目历史信用情况描述',
+    `current_project_situation_desc`   varchar(100)                                                 default null comment '涉事项目当前情况描述',
+    `trend_increasing_or_not`          bit(1)                                                       default null comment '行业风险是否有变大的趋势',
+    `trend_increasing_area_or_not`     bit(1)                                                       default null comment '项目所在地区是否有风险变大的趋势',
+    `measures`                         varchar(200)                                                 default null comment '如上述风险存在，将采取何种方式减弱风险影响',
+    `effectiveness_of_measures`        varchar(32)                                                  default null comment '预估措施的成效',
+    `expected_remaining_issues`        varchar(200)                                                 default null comment '预计仍会存在的问题',
+    `business_significant_risk_or_not` bit(1)                                                       default null comment '业务部门判断是否为重大风险',
+    `warning_situation`                varchar(32)                                                  default null comment '预警情况',
+    `warning_level`                    varchar(32)                                                  default null comment '预警等级',
+    `significant_risk_or_not`          bit(1)                                                       default null comment '是否为重大风险',
+    `attachment`                       varchar(300)                                                 default null comment '附件',
+    `create_time`                      datetime                                                     DEFAULT NULL COMMENT '创建日期',
+    `update_time`                      datetime                                                     DEFAULT NULL COMMENT '更新日期',
+    `create_by`                        varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '创建人',
+    `update_by`                        varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '更新人',
+    `deleted`                          varchar(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci  DEFAULT '0' COMMENT '删除标签  逻辑删除（0：未删除，1：已删除）',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci COMMENT ='业务部门重大风险';
+
+
+
+CREATE TABLE `t_dynamic_monitoring_of_risk_projects`
+(
+    `id`                           varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'ID',
+    `filling_date`                 datetime                                                     default null comment '填报日期',
+    `business_department`          varchar(32)                                                  default null comment '业务部门',
+    `contract_number`              varchar(32)                                                  default null comment '合同编号',
+    `lessee`                       varchar(32)                                                  default null comment '承租人',
+    `abs_project_or_not`           bit(1)                                                       default null comment '是否ABS项目',
+    `industry`                     varchar(32)                                                  default null comment '行业',
+    `region`                       varchar(32)                                                  default null comment '地区',
+    `within_and_outside_the_group` varchar(32)                                                  default null comment '集团内外',
+    `business_handling`            varchar(32)                                                  default null comment '业务经办',
+    `warning_or_not`               bit(1)                                                       default null comment '是否预警',
+    `warning_number`               varchar(32)                                                  default null comment '预警编号',
+    `early_warning_indicators`     varchar(32)                                                  default null comment '预警指标',
+    `warning_level`                varchar(32)                                                  default null comment '预警级别',
+    `overdue_or_not`               bit(1)                                                       default null comment '是否逾期',
+    `overdue_days`                 int                                                          default null comment '逾期天数',
+    `number_of_overdue_periods`    int                                                          default null comment '逾期期数',
+    `planned_repayment_date`       varchar(32)                                                  default null comment '计划还款日',
+    `extend_the_term_or_not`       bit(1)                                                       default null comment '是否展期',
+    `transfer_or_not`              bit(1)                                                       default null comment '是否转处置',
+    `overdue_rent`                 float8                                                       default null comment '逾期租金',
+    `remaining_rent`               float8                                                       default null comment '尚余租金',
+    `latest_tracking_status`       varchar(32)                                                  default null comment '最新跟踪情况',
+    `corresponding_measures`       varchar(32)                                                  default null comment '相应措施',
+    `has_change_this_week`         bit(1)                                                       default null comment '本周有无变化',
+    `create_time`                  datetime                                                     DEFAULT NULL COMMENT '创建日期',
+    `update_time`                  datetime                                                     DEFAULT NULL COMMENT '更新日期',
+    `create_by`                    varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '创建人',
+    `update_by`                    varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '更新人',
+    `deleted`                      varchar(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci  DEFAULT '0' COMMENT '删除标签  逻辑删除（0：未删除，1：已删除）',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci COMMENT ='风险项目动态监控';
+
+CREATE TABLE `t_major_risks_for_functional_department`
+(
+    `id`                                                varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'ID',
+    `has_risk_in_this_quarter_or_not`                   bit(1)                                                       default null comment '本季度是否有风险',
+    `quarter`                                           int                                                          default null comment '季度',
+    `emergency_situation_or_not`                        bit(1)                                                       default null comment '是否为紧急情况',
+    `functional_departments`                            varchar(32)                                                  default null comment '职能部门',
+    `filling_date`                                      datetime                                                     default null comment '填报日期',
+    `has_risk_events_happen_or_not`                     bit(1)                                                       default null comment '监控期间是否有清单内的风险事件发生',
+    `involve_project`                                   varchar(100)                                                 default null comment '如有，所涉项目或事件',
+    `contract_number`                                   varchar(32)                                                  default null comment '合同编号',
+    `rental_product_type`                               varchar(32)                                                  default null comment '租赁产品类型',
+    `starting_date_of_lease`                            date                                                         default null comment '起租日期',
+    `termination_date`                                  date                                                         default null comment '终止日期',
+    `net_remaining_principal`                           double                                                       default null comment '净剩余本金',
+    `impact_of_risk_events_on_our_company`              varchar(200)                                                 default null comment '风险事件对我司影响大小',
+    `measures_taken_to_mitigate_impact`                 varchar(300)                                                 default null comment '如上述风险存在，将采取何种方式减弱风险影响',
+    `estimating_the_effective_of_measures`              varchar(200)                                                 default null comment '预估措施的成效',
+    `expected_remaining_issues`                         varchar(300)                                                 default null comment '预计仍会存在的问题',
+    `functional_departments_determine_significant_risk` bit(1)                                                       default null comment '职能部门判断是否为重大风险',
+    `warning_situation`                                 varchar(32)                                                  default null comment '预警情况',
+    `warning_level`                                     varchar(32)                                                  default null comment '预警等级',
+    `significant_risk_or_not`                           varchar(32)                                                  default null comment '是否为重大风险',
+    `attachmentList`                                    varchar(32)                                                  default null comment '附件',
+    `create_time`                                       datetime                                                     DEFAULT NULL COMMENT '创建日期',
+    `update_time`                                       datetime                                                     DEFAULT NULL COMMENT '更新日期',
+    `create_by`                                         varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '创建人',
+    `update_by`                                         varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '更新人',
+    `deleted`                                           varchar(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci  DEFAULT '0' COMMENT '删除标签  逻辑删除（0：未删除，1：已删除）',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci COMMENT ='职能部门重大风险';
+
+CREATE TABLE `t_related_party_transaction`
+(
+    `id`                                                  varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'ID',
+    `business_department`                                 varchar(32)                                                  default null comment '业务部门',
+    `contract_number`                                     varchar(32)                                                  default null comment '合同编号',
+    `group_clients`                                       varchar(32)                                                  default null comment '集团客户',
+    `tenants_under_group_clients`                         varchar(32)                                                  default null comment '集团客户项下承租人',
+    `net_financing_amount_of_the_lessee`                  varchar(32)                                                  default null comment '承租人净融资额',
+    `accumulated_net_financing_amount_of_group_customers` varchar(32)                                                  default null comment '集团客户累计净融资额',
+    `concentration_ratio_of_single_group_customers`       varchar(32)                                                  default null comment '单一集团客户集中度',
+    `exceeded_regulatory_limit_or_not`                    bit(1)                                                       default null comment '是否超过监管上限（50%）',
+    `create_time`                                         datetime                                                     DEFAULT NULL COMMENT '创建日期',
+    `update_time`                                         datetime                                                     DEFAULT NULL COMMENT '更新日期',
+    `create_by`                                           varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '创建人',
+    `update_by`                                           varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '更新人',
+    `deleted`                                             varchar(4) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci  DEFAULT '0' COMMENT '删除标签  逻辑删除（0：未删除，1：已删除）',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci COMMENT ='关联交易';

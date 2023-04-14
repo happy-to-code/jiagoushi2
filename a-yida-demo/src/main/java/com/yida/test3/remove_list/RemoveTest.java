@@ -2,6 +2,8 @@ package com.yida.test3.remove_list;
 
 import cn.hutool.core.util.StrUtil;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,5 +33,12 @@ public class RemoveTest {
         s = StrUtil.replace(s, "${","");
         s = StrUtil.replace(s,"}","");
         System.out.println("s = " + s);
+
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String dateTime = formatter.format(LocalDateTime.now());
+        System.out.println(dateTime);
+
+
     }
 }
