@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
  * @Desc: runAsync是创建没有返回值的异步任务。
  * 它有如下两个方法，一个是使用默认线程池（ForkJoinPool.commonPool()）的方法，一个是带有自定义线程池的重载方法
  * @author: zhangyifei
- * @Date: 2022/11/10 17:14
+ * @Date: 2022/11/10 17:14.sql
  * @Version:
  */
 public class Demo {

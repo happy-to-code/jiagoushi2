@@ -7,7 +7,7 @@ import java.util.concurrent.Future;
  * @Type: TestService.java
  * @Desc:
  * @author: zhangyifei
- * @Date: 2022/11/11 14:22
+ * @Date: 2022/11/11 14.sql:22
  * @Version:
  */
 public interface SyncService {

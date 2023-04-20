@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @Auther: yida
- * @Date: 2023/2/22 14:05
+ * @Date: 2023/2/22 14.sql:05
  * @Description:
  */
 public class PrintAbc_3 {

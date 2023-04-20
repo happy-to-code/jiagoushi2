@@ -1,0 +1,1 @@
+ALTER TABLE `t_ncr_month_report_statistics` ADD assessment_reasons VARCHAR(255) COMMENT '是否纳入考核原因' AFTER assess;

@@ -1,0 +1,51 @@
+/**
+     * 项目减值(元)
+     */
+    @ApiModelProperty("项目减值(元)")
+    private String projectImpairment;
+
+    /**
+     * 项目剩余敞口(元)
+     */
+    @ApiModelProperty("项目剩余敞口(元)")
+    private String surplusExposure;
+
+    /**
+     * 形成原因
+     */
+    @ApiModelProperty("形成原因")
+    private String reason;
+    /**
+     * 业务情况说明
+     */
+    @ApiModelProperty("业务情况说明")
+    private String businessSituationDesc;
+
+    /**
+     * 化解方案
+     */
+    @ApiModelProperty("化解方案")
+    private String programme;
+
+    /**
+     * 当月跟踪情况
+     */
+    @ApiModelProperty("当月跟踪情况")
+    private String monthlyTrackingStatus;
+
+    ALTER TABLE `t_kanban_management` ADD assessment_reasons VARCHAR(255) AFTER assess COMMENT '是否纳入考核原因';
+
+     project_impairment
+     surplus_exposure
+     reason
+     business_situation_desc
+     programme
+     monthly_tracking_status
+
+
+ALTER TABLE `t_kanban_management` ADD project_impairment varchar(500) comment '项目减值(元)' after state ;
+ALTER TABLE `t_kanban_management` ADD surplus_exposure varchar(500) comment '项目剩余敞口(元)' after state ;
+ALTER TABLE `t_kanban_management` ADD reason varchar(500) comment '形成原因' after state ;
+ALTER TABLE `t_kanban_management` ADD business_situation_desc varchar(500) comment '业务情况说明' after state ;
+ALTER TABLE `t_kanban_management` ADD programme varchar(500) comment '化解方案' after state ;
+ALTER TABLE `t_kanban_management` ADD monthly_tracking_status varchar(500) comment '当月跟踪情况' after state ;

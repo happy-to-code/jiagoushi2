@@ -2,7 +2,7 @@ package com.yida.test3.multi_thread.print_abc3;
 
 /**
  * @Auther: yida
- * @Date: 2023/2/22 14:11
+ * @Date: 2023/2/22 14.sql:11
  * @Description:
  */
 public class Test {

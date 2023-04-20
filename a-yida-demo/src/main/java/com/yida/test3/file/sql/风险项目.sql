@@ -359,3 +359,123 @@ CREATE TABLE `t_related_party_transaction`
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_0900_ai_ci COMMENT ='关联交易';
+
+CREATE TABLE `t_task_agent_reminder`
+(
+    `id`               varchar(32) NOT NULL COMMENT 'ID',
+    `number`           varchar(32) default null comment '编号',
+    `origination_date` date        default null comment '发起日期',
+    `title`            varchar(50) default null comment '标题',
+    `to_do_or_not`     bit(1)      default null comment '是否待办',
+    `type`             varchar(32) default null comment '类型',
+    `person_in_charge` varchar(32) default null comment '负责人',
+    `content`          text        default null comment '内容',
+    `create_time`      datetime    DEFAULT NULL COMMENT '创建日期',
+    `update_time`      datetime    DEFAULT NULL COMMENT '更新日期',
+    `create_by`        varchar(32) DEFAULT NULL COMMENT '创建人',
+    `update_by`        varchar(32) DEFAULT NULL COMMENT '更新人',
+    `deleted`          varchar(4)  DEFAULT '0' COMMENT '删除标签  逻辑删除（0：未删除，1：已删除）',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci COMMENT ='任务代办提醒';
+
+CREATE TABLE `t_kanban_management`
+(
+    `id`                         varchar(32) NOT NULL COMMENT 'ID',
+    `month`                      varchar(32) default null comment '月份',
+    `business_department`        varchar(32) default null comment '业务部门',
+    `business_department_system` varchar(32) default null comment '业务部门（系统）',
+    `contract_number`            varchar(32) default null comment '合同编号',
+    `entry_name`                 varchar(32) default null comment '项目名称',
+    `project_leader`             varchar(32) default null comment '项目负责人',
+    `project_leader_system`      varchar(32) default null comment '项目负责人（系统）',
+    `total_risk_exposure`        varchar(32) default null comment '风险总敞口(元)',
+    `business_type`              varchar(32) default null comment '业务类型',
+    `risk_level`                 varchar(32) default null comment '风险程度',
+    `state`                      int         default null comment '状态(草稿:1,审批中:2,已完成:3)',
+    `create_time`                datetime    DEFAULT NULL COMMENT '创建日期',
+    `update_time`                datetime    DEFAULT NULL COMMENT '更新日期',
+    `create_by`                  varchar(32) DEFAULT NULL COMMENT '创建人',
+    `update_by`                  varchar(32) DEFAULT NULL COMMENT '更新人',
+    `deleted`                    varchar(4)  DEFAULT '0' COMMENT '删除标签  逻辑删除（0：未删除，1：已删除）',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci COMMENT ='看板管理';
+
+CREATE TABLE `t_post_lease_follow_up`
+(
+    `id`                         varchar(32) NOT NULL COMMENT 'ID',
+    `quarter`                    int         default null comment '季度',
+    `contract_number`            varchar(32) default null comment '合同编号',
+    `business_department`        varchar(32) default null comment '业务部门',
+    `business_department_system` varchar(32) default null comment '业务部门（系统）',
+    `project_leader`             varchar(32) default null comment '项目负责人',
+    `project_leader_system`      varchar(32) default null comment '项目负责人（系统）',
+    `tenant_name`                varchar(32) default null comment '承租人名称',
+    `overdue_rent`               varchar(32) default null comment '逾期租金',
+    `overdue_days`               varchar(32) default null comment '逾期天数',
+    `net_principal`              varchar(32) default null comment '净本金',
+    `whether_to_follow_up`       bit(1)      default null comment '是否回访',
+    `return_visit_method`        varchar(32) default null comment '回访方式',
+    `report_format`              varchar(32) default null comment '报告形式',
+    `create_time`                datetime    DEFAULT NULL COMMENT '创建日期',
+    `update_time`                datetime    DEFAULT NULL COMMENT '更新日期',
+    `create_by`                  varchar(32) DEFAULT NULL COMMENT '创建人',
+    `update_by`                  varchar(32) DEFAULT NULL COMMENT '更新人',
+    `deleted`                    varchar(4)  DEFAULT '0' COMMENT '删除标签  逻辑删除（0：未删除，1：已删除）',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci COMMENT ='租后回访';
+
+
+CREATE TABLE `t_task_agent_reminder_feedback`
+(
+    `id`              varchar(32) NOT NULL COMMENT 'ID',
+    `person_in_charge`  varchar2(80) default null comment '负责人',
+    `feedback_content` text         default null comment '反馈内容',
+    `attachment`      text         default null comment '附件',
+    `create_time`     datetime     DEFAULT NULL COMMENT '创建日期',
+    `update_time`     datetime     DEFAULT NULL COMMENT '更新日期',
+    `create_by`       varchar(32)  DEFAULT NULL COMMENT '创建人',
+    `update_by`       varchar(32)  DEFAULT NULL COMMENT '更新人',
+    `deleted`         varchar(4)   DEFAULT '0' COMMENT '删除标签  逻辑删除（0：未删除，1：已删除）',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci COMMENT ='任务代办提醒反馈';
+
+
+CREATE TABLE `t_task_agent_reminder_feedback`
+(
+    `id`              varchar(32) NOT NULL COMMENT 'ID',
+    `person_in_charge`  varchar2(80) default null comment '负责人',
+    `feedback_content` text         default null comment '反馈内容',
+    `attachment`      text         default null comment '附件',
+    `create_time`     datetime     DEFAULT NULL COMMENT '创建日期',
+    `update_time`     datetime     DEFAULT NULL COMMENT '更新日期',
+    `create_by`       varchar(32)  DEFAULT NULL COMMENT '创建人',
+    `update_by`       varchar(32)  DEFAULT NULL COMMENT '更新人',
+    `deleted`         varchar(4)   DEFAULT '0' COMMENT '删除标签  逻辑删除（0：未删除，1：已删除）',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci COMMENT ='任务代办提醒流水号';
+
+
+CREATE TABLE `t_task_agent_reminder_serial_number`
+(
+    `id`              varchar(32) NOT NULL COMMENT 'ID',
+    `type`  varchar2(80) default null comment '类型',
+    `serial_number` text         default null comment '序列号',
+    `create_time`     datetime     DEFAULT NULL COMMENT '创建日期',
+    `update_time`     datetime     DEFAULT NULL COMMENT '更新日期',
+    `create_by`       varchar(32)  DEFAULT NULL COMMENT '创建人',
+    `update_by`       varchar(32)  DEFAULT NULL COMMENT '更新人',
+    `deleted`         varchar(4)   DEFAULT '0' COMMENT '删除标签  逻辑删除（0：未删除，1：已删除）',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_0900_ai_ci COMMENT ='任务代办提醒流水号';
