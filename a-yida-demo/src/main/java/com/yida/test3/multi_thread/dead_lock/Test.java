@@ -2,7 +2,7 @@ package com.yida.test3.multi_thread.dead_lock;
 
 /**
  * @Auther: yida
- * @Date: 2023/2/22 14:32
+ * @Date: 2023/2/22 14.sql:32
  * @Description:
  */
 public class Test {

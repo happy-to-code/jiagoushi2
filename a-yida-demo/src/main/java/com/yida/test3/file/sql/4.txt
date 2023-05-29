@@ -1,0 +1,89 @@
+number            <>    编号
+department            <>    所属部门
+report time           <>    报告时间
+lessee            <>    承租人
+total equipment amount            <>    设备总额
+remaining rent            <>    尚余租金
+net financing             <>    净融资额
+net remaining principal           <>    净剩余本金
+project overview and risk profile             <>    项目基本概况及风险情况
+rental property information           <>    租赁物信息
+analysis of early warning situation           <>    预警情况分析
+detailed description of warning indicators            <>    预警指标详细描述
+opinions from various departments             <>    各部门意见
+risk level and expected loss level                <>    我司风险程度及预计损失程度
+opinions response             <>    风险管理部意见及风险应对
+early warning tracking            <>    预警跟踪
+risk manager              <>    风险部经理
+risk control director             <>    风控总监
+
+
+``number`
+``department`
+``report_time`
+``lessee`
+``total_equipment_amount`
+``remaining_rent`
+``net_financing`
+``net_remaining_principal`
+``project_overview_and_risk_profile`
+``rental_property_information`
+``analysis_of_early_warning_situation`
+``detailed_description_of_warning_indicators`
+``opinions_from_various_departments`
+``risk_level_and_expected_loss_level`
+``opinions_response`
+``early_warning_tracking`
+``risk_manager`
+``risk_control_director`
+
+
+
+
+
+
+
+number
+department
+report time
+lessee
+total equipment amount
+remaining rent
+net financing
+net remaining principal
+project overview and risk profile
+rental property information
+analysis of early warning situation
+detailed description of warning indicators
+opinions from various departments
+our company's risk level and expected loss level
+opinions of risk management department and risk response
+early warning tracking
+risk manager
+risk control director
+
+
+
+
+
+
+
+
+
+
+
+
+业务类型
+合同编号
+起租日
+到期日
+合同执行情况
+逾期记录
+
+
+business_type
+contract_number
+starting_date_of_lease
+due_date
+contract_execution_status
+past_due_records

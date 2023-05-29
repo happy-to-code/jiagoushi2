@@ -1,0 +1,104 @@
+
+    @ApiModelProperty("设备供应商")
+    private String equipmentSupplier;
+
+
+    @ApiModelProperty("当年累计回款（逾期项目）")
+    private String overdueProjects;
+
+
+    @ApiModelProperty("是否收集催收记录")
+    private Boolean whetherToCollectCollectionRecords;
+
+
+    @ApiModelProperty("是否收集工商信息")
+    private Boolean whetherToCollectBusinessInfo;
+
+
+    @ApiModelProperty("是否收集征信报告")
+    private Boolean whetherToCollectCreditReport;
+
+
+    @ApiModelProperty("是否收集征法院执行信息")
+    private Boolean whetherToCollectCourtEnforcementInfo;
+
+
+    @ApiModelProperty("是否收集征财报")
+    private Boolean whetherToCollectFinancialReports;
+
+
+    @ApiModelProperty("是否收集征年度审计报告")
+    private Boolean whetherToCollectAnnualAuditReport;
+
+
+    @ApiModelProperty("是否收集征中登网")
+    private Boolean whetherToCollectZhongDengNet;
+
+
+    @ApiModelProperty("是否有照片")
+    private Boolean photosOrNot;
+
+
+    @ApiModelProperty("附件")
+    private String attachments;
+
+
+
+    @ApiModelProperty("承租人经营及财务状况")
+    private String businessAndFinancialCondition;
+
+
+     */
+    @ApiModelProperty("租赁物/抵押物情况")
+    private String collateralSituation;
+
+
+    @ApiModelProperty("承租人信用情况及负面情况")
+    private String tenantCreditSituation;
+
+
+    @ApiModelProperty("其他需要说明事项")
+    private String others;
+
+
+    @ApiModelProperty("承租人逾期原因分析")
+    private String reasonsOfOverdue;
+
+
+    @ApiModelProperty("承租人后续资金安排")
+    private String fundingArrange;
+
+
+    @ApiModelProperty("承租人财产线索")
+    private String propertyClues;
+
+
+    @ApiModelProperty("后续处理意见")
+    private String handlingOpinions;
+
+
+    @ApiModelProperty("风险管理部意见")
+    private String riskManagementDepartmentOpinions;
+
+
+
+     equipmentSupplier
+     overdueProjects
+     whetherToCollectCollectionRecords
+     whetherToCollectBusinessInfo
+     whetherToCollectCreditReport
+     whetherToCollectCourtEnforcementInfo
+     whetherToCollectFinancialReports
+     whetherToCollectAnnualAuditReport
+     whetherToCollectZhongDengNet
+     photosOrNot
+     attachments
+     businessAndFinancialCondition
+     collateralSituation
+     tenantCreditSituation
+     others
+     reasonsOfOverdue
+     fundingArrange
+     propertyClues
+     handlingOpinions
+     riskManagementDepartmentOpinions

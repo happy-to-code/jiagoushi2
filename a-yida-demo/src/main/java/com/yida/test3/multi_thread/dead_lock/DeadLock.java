@@ -4,7 +4,7 @@ import com.yida.test3.multi_thread.print_abc3.PrintAbc_3;
 
 /**
  * @Auther: yida
- * @Date: 2023/2/22 14:29
+ * @Date: 2023/2/22 14.sql:29
  * @Description:
  */
 public class DeadLock {

@@ -1,0 +1,16 @@
+业务部门
+合同编号
+集团客户
+集团客户项下承租人
+承租人净融资额
+集团客户累计净融资额
+单一集团客户集中度
+是否超过监管上限（50%）
+business_department
+contract_number
+group_clients
+tenants_under_group_clients
+net_financing_amount_of_the_lessee
+accumulated_net_financing_amount_of_group_customers
+concentration_ratio_of_single_group_customers
+exceeded_regulatory_limit_or_not

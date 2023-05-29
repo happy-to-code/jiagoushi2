@@ -1,0 +1,105 @@
+t-adt-annual-audit-plan     annual-audit-plan
+t-adt-annual-audit-plan-detail      company-learning-feedback
+t-adt-audit-corrective-measurement      company-supervision-feedback
+t-adt-audit-info-collect        corrective-measurement
+t-adt-external-audit-info       critical-process-subcontract
+t-adt-individual-audit-plan     dedicated-audit-plan
+t-adt-individual-audit-report       dedicated-audit-report
+t-adt-individual-audit-report-car-rel       dept-independent-learning-feedback
+t-adt-individual-audit-team-member      dept-learning-feedback
+t-adt-report-suggestion     dept-supervision-feedback
+t-bsc-data-log      experience-feedback
+t-bsc-data-permission       external-audit
+t-bsc-dict      group-learning-feedback
+t-bsc-dict-category     group-supervision-feedback
+t-bsc-dict-item     individual-audit-plan
+t-bsc-file-info     individual-audit-report
+t-bsc-instance-dept-rel     larger-quality-event
+t-bsc-odm       major-quality-event
+t-bsc-odm-rel                                               ncr-report
+t-bsc-odm-sync-config       quality-loss
+t-bsc-org       quality-risk
+t-bsc-permission        quality-target
+t-bsc-post      quality-target-completion
+t-bsc-post-detail       resource-deployment
+t-bsc-process-draft-data        supervision-feedback
+t-bsc-process-form      supervision-plan
+t-bsc-process-form-bak      supervision-report
+t-bsc-process-history
+t-bsc-process-instance
+t-bsc-process-instance-cc
+t-bsc-process-listener
+t-bsc-process-template
+t-bsc-role
+t-bsc-role-permission
+t-bsc-sys-lbpm-node
+t-bsc-sys-log
+t-bsc-sys-ncr-column
+t-bsc-sys-ncr-task-company
+t-bsc-sys-no
+t-bsc-sys-param
+t-bsc-sys-sample-no
+t-bsc-user-role
+t-cm-car-project-rel
+t-cm-corrective-measurement
+t-da-dedicated-audit-plan
+t-da-dedicated-audit-plan-historical
+t-da-dedicated-audit-report
+t-error-log
+t-exp-company-learning-feedback
+t-exp-dept-independent-learning-feedback
+t-exp-dept-learning-feedback
+t-exp-experience-feedback
+t-exp-group-learning-feedback
+t-exp-pre-company-learning-feedback
+t-exp-pre-dept-learning-feedback
+t-lbpm-record
+t-ncr-month-report
+t-ncr-month-report-detail
+t-ncr-month-report-statistics
+t-ncr-task-field
+t-ncr-task-log
+t-ncr-task-log-error
+t-nsc-nuclear-safety-culture
+t-os-supervision-base
+t-os-supervision-plan
+t-os-supervision-report-process
+t-pend-item
+t-qe-larger-check-followup
+t-qe-larger-check-plan
+t-qe-larger-quality-event
+t-qe-major-car-bak
+t-qe-major-check-feedback
+t-qe-major-check-list
+t-qe-major-check-plan
+t-qe-major-event-tracking
+t-qe-major-quality-event
+t-qe-major-supervision-action
+t-ql-quality-loss
+t-ql-quality-loss-external
+t-ql-quality-loss-internal
+t-ql-quality-loss-vendor
+t-qr-quality-risk
+t-qr-quality-risk-detail
+t-qr-quality-risk-summary
+t-qs-certificate-qualification
+t-qs-policy-regulation
+t-qs-system-document
+t-qt-quality-target
+t-qt-quality-target-completion
+t-qt-quality-target-completion-detail
+t-qt-quality-target-detail
+t-qt-quality-target-statistics
+t-rs-critical-process-subcontract
+t-rs-hr-deployment-staff
+t-rs-hr-resource-deployment
+t-sf-company-supervision-feedback
+t-sf-dept-supervision-feedback
+t-sf-group-supervision-feedback
+t-sf-pre-dept-supervision-feedback
+t-sf-pre-group-supervision-feedback
+t-sf-pre-supervision-feedback
+t-sf-supervision-feedback
+t-srm-log
+t-srm-process-flow
+t-srm-process-rel

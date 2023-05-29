@@ -1,0 +1,16 @@
+编号
+发起日期
+标题
+是否待办
+类型
+负责人
+内容
+
+
+number
+origination_date
+title
+to_do_or_not
+type
+person_in_charge
+content

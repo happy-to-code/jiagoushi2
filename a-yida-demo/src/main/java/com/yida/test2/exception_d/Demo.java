@@ -4,7 +4,7 @@ package com.yida.test2.exception_d;
  * @Type: Demo.java
  * @Desc:
  * @author: zhangyifei
- * @Date: 2023/1/15 14:41
+ * @Date: 2023/1/15 14.sql:41
  * @Version:
  */
 public class Demo {
