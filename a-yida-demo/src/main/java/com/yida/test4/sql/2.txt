@@ -1,0 +1,17 @@
+SELECT
+	p."id AS "id",
+	p."project_name" AS "projectName",
+	p."inancing_type" AS "financingType",
+	p."need_money" AS "needMoney",
+	p."stage" AS "stage",
+	p."project_info" AS "projectInfo",
+	p."dept_code" AS "deptCode",
+	team."project_id" AS "projectId",
+	team."name" AS "name",
+	team."title" AS "title",
+	team."experienc‘e" AS "experience"
+FROM
+	"ly_project_info" p 
+	LEFT JOIN "ly_core_team_info" team ON p."id" = team."project_id" 
+WHERE
+	p."id" = 1
