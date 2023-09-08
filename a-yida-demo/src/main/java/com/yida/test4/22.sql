@@ -1,0 +1,28 @@
+CREATE TABLE `equity`
+(
+    `id`                                    varchar(20) NOT NULL,
+    `target_company`                        varchar(50)          default null comment '标的公司',
+    `transferred_equity_number`             varchar(50)          default null comment '出让股权数量',
+    `situation_team`                        varchar(50)          default null comment '标的公司管理层/创始团队情况',
+    `valuation`                             varchar(50)          default null comment '标的公司估值及依据',
+    `establishment_date`                    varchar(50)          default null comment '标的公司成立时间',
+    `main_business`                         varchar(50)          default null comment '标的公司主营业务',
+    `financial_status`                      varchar(50)          default null comment '标的公司财务状况',
+    `business_model`                        varchar(50)          default null comment '标的公司商业模式',
+    `industry_situation`                    varchar(50)          default null comment '标的公司所处行业情况',
+    `comparative_advantages`                varchar(50)          default null comment '标的公司对比优势',
+    `development_plan`                      varchar(50)          default null comment '标的公司发展规划',
+    `shareholders_and_shareholding_ratio`   varchar(50)          default null comment '标的公司股东及持股比例',
+    `historical_financing_situation`        varchar(50)          default null comment '标的公司历史融资情况',
+    `subsequent_financing_and_listing_plan` varchar(50)          default null comment '标的公司后续融资及上市计划',
+    `transferor_contact_person`             varchar(50)          default null comment '出让方联系人',
+    `transferor_contact_number`             varchar(50)          default null comment '出让方联系电话',
+    `transferor_name`                       varchar(50)          default null comment '出让方名称',
+    `other_situations_explanation`          varchar(50)          default null comment '其他情况说明',
+    `release_date`                          varchar(50)          default null comment '发布日期',
+    `create_time`                           datetime             DEFAULT NULL COMMENT '创建时间',
+    `update_time`                           datetime             DEFAULT NULL COMMENT '更新时间',
+    `create_by`                             varchar(20)          DEFAULT NULL COMMENT '创建人',
+    `update_by`                             varchar(20)          DEFAULT NULL COMMENT '更新人',
+    `deleted`                               bit(1)      NOT NULL DEFAULT b'0' COMMENT '删除标记（0：正常；1：已删除）'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='私募股权';

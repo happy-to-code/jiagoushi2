@@ -15,7 +15,7 @@ import java.util.Base64;
 public class Test {
 
     public static void main1(String[] args) throws Exception {
-        String s = LoadContentByPath("E:\\java_demo\\jiagoushi2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\hex2pdf\\1.txt");
+        String s = LoadContentByPath("E:\\java_demo\\jiagoushi2\\a-yida-demo\\src\\main\\java\\com\\yida\\test\\hex2pdf\\1.sql");
         // byte[] b = hexStringToBytes(s);
         byte[] b = HexUtil.decodeHex(s);
 
