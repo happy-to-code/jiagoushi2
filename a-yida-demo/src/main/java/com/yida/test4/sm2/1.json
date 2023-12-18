@@ -1,0 +1,106 @@
+{
+  "security": {
+    "account": "13788956259",
+    "source": "上股交"
+  },
+  "projectInfo": {
+    "id": 14,
+    "projectName": "研发及生产基地建设",
+    "financingType": "股权融资",
+    "needMoney": "5000万-1亿",
+    "stage": 4,
+    "projectInfo": "1. 建设自有生产基地3000~5000万元；（目前主要是以代加工为主）；\n2. 团队扩建1000~2000万元；\n3. 加大科研投入1000~3000万元。",
+    "serviceId": "svc1d56322aa6da4f85e165947a795bbe5a6159951701298bdec5bc1769",
+    "method": "updateProject"
+  },
+  "baseInfo": {
+    "projectId": 14,
+    "companyName": "威泊（上海）新能源科技股份有限公司",
+    "shortName": "威泊股份",
+    "creditCode": "91310107324485470F",
+    "legalPerson": "刘跃进",
+    "registerTime": "2015-01-22",
+    "realCapital": 2000,
+    "website": "https://www.wiposh.cn/",
+    "area": "上海市,上海市",
+    "address": "中国（上海）自由贸易试验区郭守敬路498号8幢19号楼3层",
+    "logo": " ",
+    "logoUrl": "https://www.china-see.com/attached/logo20230616.jpg",
+    "tags": "33,35,76",
+    "regUserName": "刘跃进",
+    "regUserTitle": "董事长、总经理",
+    "isRegUserManager": "1",
+    "contactsPhone": "13788956259",
+    "contactsName": "刘跃进",
+    "contactsTitle": "董事长、总经理",
+    "contactsEmail": "xierui@wipo.com",
+    "companyInfo": "2015由国务院“百人计划”归国博士团队创建。\n连续6年年均营收增长率超过100%！\n产品一直处于供不应求状态。\n主要产品系列：\n1. 智能仓储无线充电产品\n2. 智慧小区无线充电产品\n3. 新能源汽车无线充电产品\n4. 双模桩---无线+有线充电桩\n5. 路上充---数字道路无线充电\n6. 移电宝---移动无线充电机器人\n7. 飞电宝---无人机高空无线充电\n8. 港船潜---涉水无线充电产品"
+  },
+  "coreTeamInfoList": [
+    {
+      "projectId": 14,
+      "name": "刘跃进",
+      "title": "董事长、总经理",
+      "experience": "刘跃进，男，1959 年 12 月出生，中国国籍，无境外永久居留权，毕业于瑞典皇家理工学院无线通信系统专业，博士研究生学历，高级职称。1982 年08 月至 1985 年 06 月，任河北省邮电局助理工程师；1985 年 07 月至 1988 年07 月，任国家经委培训中心 MBA 研究生培训；1988 年 08 月至 1990 年 07 月，瑞典皇家理工学院硕士研究生在读；1990 年 08 月至 1993 年 07 月，瑞典皇家理工学院博士研究生在读；1993 年 08 月至 2002 年 12 月，任瑞典爱立信总部无线网络与系统研发中心研发工程师、项目经理、资深专家、技术总监；2002年 12 月至 2005 年 12 月，任瑞典林雪平大学教授、博士生导师，瑞典皇家理工学院博士生导师；2006 年 01 月至 2008 年 12 月，任上海联合通信有限公司技术总监；2009 年 01 月至 2014 年 12 月，任瑞典皇家理工学院博士生导师；2015 年 01 月至今，任有限公司董事长、总经理。现任股份公司第一届董事会董事长兼总经理。"
+    },
+    {
+      "projectId": 14,
+      "name": "王俊生",
+      "title": "副总经理",
+      "experience": "本科学历，曾任多家国企领导管理岗位、地方政府领导管理工作，具有三十多年的领导管理工作经验，良好的地方政府沟通协调能力，现任威泊股份副总经理，主要负责公司的渠道开发和管理。"
+    }
+  ],
+  "financeDataInfoList": [
+    {
+      "projectId": 14,
+      "time": "2022",
+      "income": 5752.6756,
+      "netprofit": 88.22,
+      "assets": 2193.0554,
+      "liability": 2550.7233
+    },
+    {
+      "projectId": 14,
+      "time": "2021",
+      "income": 3992.327,
+      "netprofit": -17.318,
+      "assets": 2104.8354,
+      "liability": 171.4005
+    },
+    {
+      "projectId": 14,
+      "time": "2020",
+      "income": 1868.6372,
+      "netprofit": 61.2772,
+      "assets": 2122.1534,
+      "liability": 294.5438
+    }
+  ],
+  "shareholderInfoList": [
+    {
+      "projectId": 14,
+      "shareholderName": "刘跃进",
+      "proportion": "71.83%"
+    },
+    {
+      "projectId": 14,
+      "shareholderName": "王华礼",
+      "proportion": "11.58%"
+    },
+    {
+      "projectId": 14,
+      "shareholderName": "上海威充新能源",
+      "proportion": "15.00%"
+    },
+    {
+      "projectId": 14,
+      "shareholderName": "吴晓龙",
+      "proportion": "1.60%"
+    }
+  ],
+  "bpInfo": {
+    "projectId": 14,
+    "filePath": "https://www.china-see.com/marketServiceDetail.do?articleId=664974324&articleType=trz_fw"
+  },
+  "method": "updateProject"
+}
