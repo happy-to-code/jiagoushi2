@@ -241,6 +241,12 @@
             <version>3.3.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>cn.bigmodel.openapi</groupId>
+            <artifactId>oapi-java-sdk</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+
     </dependencies>
     <repositories>
         <repository>
